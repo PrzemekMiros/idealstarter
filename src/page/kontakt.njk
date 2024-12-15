@@ -1,0 +1,46 @@
+---
+layout: "layouts/base.njk"
+title: Kontakt
+description: Skontaktuj się ze mną telefonicznie, mailowo lub poprzez formularz kontaktowy. Chętnie podpowiem i pomogę wybrać optymalne rozwiązanie.
+---
+
+<section class="hero pt-large pt-md-xlarge pb-small pb-md-large" data-scroll-section>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="hero-card hero-card-shape bg-accent-1">
+          <svg class="hero-card-shape-svg" viewBox="0 0 691 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0V53C0 53 3.96649 35 28.2612 35C52.556 35 570.005 34.98 606.695 34.98C643.385 34.98 651 0 651 0H0Z" fill="var(--color-light-1)"/>
+            <path d="M690.717 0C645.947 0 648.377 21.6981 625.99 29.2453C625.99 29.2453 612.849 0 634.262 0H690.717Z" fill="var(--color-light-1)"/>
+          </svg>
+          <div class="hero-card-content p-4 py-5 p-md-5">
+            <p class="h5 fade-in mb-3 mt-2 mt-md-4 color-light">Główna | {{ title }}</p>
+            <h1 class="xxl split-lines my-2 my-md-3 uppercase color-light">Napisz lub zadzwoń</h1>
+            <div class="line-x my-4"></div>
+            <div class="row g-3 align-items-center">
+              <div class="col-3 col-md-2">
+                <img src="/assets/img/hero/avatar.png" class="fade-in" style="width:55px; height:55px;" alt="Avatar">
+              </div>
+              <div class="col-9 col-md-8">
+                <p class="h5 split-lines my-0 color-light">
+                  Skontaktuj się telefonicznie, mailowo lub poprzez formularz 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 d-none d-md-block">
+          <div class="hero-card bg-dark d-md-flex align-items-center">
+            <div class="p-2 fade-in">
+                <video autoplay loop poster="/assets/img/video/movie-5-poster.png">
+                  <source src="/assets/img/video/movie-5.webm">
+                </video>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include 'sections/form.njk' %}

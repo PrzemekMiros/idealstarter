@@ -1,0 +1,129 @@
+---
+layout: "layouts/front.njk"
+title: Realizacje
+description: Zobacz wybrane realizacje stron, sklepów i portali internetowych które wykonałem.
+---
+
+<section class="hero pt-large pt-md-xlarge pb-small pb-md-large" data-scroll-section>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-7">
+        <div class="hero-card hero-card-shape bg-accent-1">
+          <svg class="hero-card-shape-svg" viewBox="0 0 691 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0V53C0 53 3.96649 35 28.2612 35C52.556 35 570.005 34.98 606.695 34.98C643.385 34.98 651 0 651 0H0Z" fill="var(--color-light-1)" />
+            <path d="M690.717 0C645.947 0 648.377 21.6981 625.99 29.2453C625.99 29.2453 612.849 0 634.262 0H690.717Z" fill="var(--color-light-1)" />
+          </svg>
+          <div class="hero-card-content p-4 py-5 p-md-5">
+            <p class="h5 fade-in mb-3 mt-2 mt-md-4 color-light">Główna | {{ title }}</p>
+            <h1 class="xxl split-lines my-2 my-md-3 uppercase color-light">Wybrane realizacje </h1>
+              <div class="line-x my-4"></div>
+            <div class="row g-3 align-items-center">
+              <div class="col-3 col-md-2">
+                 <img src="/assets/img/hero/avatar.png" class="fade-in" style="width:55px; height:55px;" alt="Przemek Miros - Avatar">
+              </div>
+              <div class="col-9 col-md-8">
+                <p class="h5 split-lines my-0 color-light">
+                  Zobacz strony, sklepy i portale internetowe które wykonałem
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5 d-none d-md-block">
+          <div class="hero-card bg-dark d-md-flex align-items-center">
+            <div class="p-1 fade-in">
+                <video autoplay loop poster="/assets/img/video/movie-6-poster.png">
+                  <source src="/assets/img/video/movie-6.webm">
+                </video>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pb-md-small" data-scroll-section>
+  <div class="container">
+    <div class="row g-md-0">
+      <div class="col-md-3 d-none d-md-block pb-small">
+        <div class="sidebar sticky fade-in">
+          <div class="works-filter p-3 py-5 p-md-5" >
+            <button class="filter-button large uppercase">
+              Sortuj
+            </button>
+            <ul class="filter-buttons my-4">
+              <li class="filter-btn-item" data-filter="all">
+                  Wszystkie
+              </li>
+              <li class="filter-btn-item option" data-filter="category:Strona internetowa">
+                 Strony www
+              </li>
+              <li class="filter-btn-item option" data-filter="category:Sklep internetowy">
+                 Sklepy internetowe
+              </li>
+              <li class="filter-btn-item option" data-filter="category:Portal internetowy">
+                 Portale informacyjne
+              </li>
+            </ul>
+              <a href="/kontakt/" title="Kontakt" class="button-anim btn-write magnetic mt-2" data-strength="60">
+              <div class="button-anim-text">
+                <span>Kontakt</span>
+                <span>Kontakt</span>
+              </div>
+
+              <div class="button-anim-icon">
+                <svg class="icon-link" width="18" height="18" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+                    <g><path fill="#fff" d="M83.3,79.7c0,2-1.6,3.6-3.6,3.6H20.3c-2,0-3.6-1.6-3.6-3.6V20.3c0-2,1.6-3.6,3.6-3.6h23.4V9.5H20.3   c-6,0-10.8,4.8-10.8,10.8v59.4c0,6,4.8,10.8,10.8,10.8h59.4c6,0,10.8-4.8,10.8-10.8V56.3h-7.2V79.7z"/><polygon fill="#fff" points="56.3,9.5 56.3,16.7 78.2,16.7 49.9,45 55,50.1 83.3,21.8 83.3,43.7 90.5,43.7 90.5,9.5  "/></g>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="pb-small"></div>
+      </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-8">
+        <div>
+          <p class="h1 mt-0 text-highlight">
+            <span>&nbsp;</span> Zobacz wybrane realizacje stron, sklepów i serwisów internetowych żeby wiedzieć czego możesz się spodziewać
+          </p>
+        </div>
+
+        <div class="portfolio pt-xsmall pt-md-medium">
+  
+        <div class="projects-inner fade-in">
+          {% for post in collections.works %}
+            <div class="works-grid-item project pb-small" data-category="{{ post.data.category }}">
+              <a href="{{ post.url }}" title="{{ post.data.client }}">
+              <div class="portfolio-item overflow-hidden">
+                <svg class="works-grid-svg-big" viewBox="0 0 197 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 0V25.9811C0 25.9811 1.7066 17.82 14.6419 17.82C27.5772 17.82 132.578 17.82 152.113 17.82C171.648 17.82 175.703 0 175.703 0H0Z" fill="var(--color-light-1)"/>
+                  <path d="M196.849 0C173.012 0 174.306 11.0537 162.386 14.8985C162.386 14.8985 155.39 0 166.791 0H196.849Z" fill="var(--color-light-1)"/>
+                </svg>
+                <div class="hover-img-wrap aspect_16-13">
+                  {% workImage "src/" + post.data.thumbnail,
+                  post.data.title %}
+                </div>
+              </div>
+              <p class="mb-2 mt-4 archive-category uppercase">
+                {{ post.data.client }}
+              </p>
+              <h3 class="h2 archive-post-title mt-0">
+                {{ post.data.title }}
+              </h3>
+              </a>
+              <a href="{{ post.data.link }}" title="Czytaj" class="button fadeIn mt-3" rel="nofollow" target="_blank">
+                <span>Zobacz online</span>
+                <svg width="11" height="11" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 1L1 13" stroke="var(--color-accent-1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M3 1H13V11" stroke="var(--color-accent-1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </a>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

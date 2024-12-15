@@ -1,0 +1,68 @@
+---
+layout: "layouts/base.njk"
+title: O mnie
+description: Tworzę strony internetowe które pozyskują klientów. Dbam o użyteczność, atrakcyjną formę i szybkość ładowania, żeby jak najlepiej zrealizować cel biznesowy.
+---
+
+<section class="hero pt-large pt-md-xlarge pb-small pb-md-large" data-scroll-section>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6">
+        <div class="hero-card hero-card-shape bg-accent-1">
+          <svg class="hero-card-shape-svg" viewBox="0 0 691 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0V53C0 53 3.96649 35 28.2612 35C52.556 35 570.005 34.98 606.695 34.98C643.385 34.98 651 0 651 0H0Z" fill="var(--color-light-1)" />
+            <path d="M690.717 0C645.947 0 648.377 21.6981 625.99 29.2453C625.99 29.2453 612.849 0 634.262 0H690.717Z" fill="var(--color-light-1)" />
+          </svg>
+          <div class="hero-card-content p-4 py-5 p-md-5">
+            <p class="h5 fade-in mb-3 mt-2 mt-md-4 color-light">Główna | {{ title }}</p>
+            <h1 class="xxl split-lines my-2 my-md-3 uppercase color-light">Czym się zajmuję </h1>
+             <div class="line-x my-4"></div>
+            <div class="row g-3 align-items-center">
+              <div class="col-3 col-md-2">
+                 <img src="/assets/img/hero/avatar.png" class="fade-in" style="width:55px; height:55px;" alt="Przemek Miros - Avatar">
+              </div>
+              <div class="col-9 col-md-8">
+                <p class="h5 split-lines my-0 color-light">
+                  Kilka słów o mnie i o tym co robię
+                </p>
+              </div>
+            </div> 
+          </div>
+        </div>
+        </div>
+        <div class="col-md-6 d-none d-md-block">
+          <div class="hero-card hero-image-cover bg-light-2">
+             {% Image "src/assets/img/about/about-4.jpg", "Przemek Miros" %}
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<section class="pb-small pb-md-medium" data-scroll-section>
+  <div class="container">
+    <div class="row">
+        <div class="col-md-4 ps-md-5">
+  
+        </div>
+        <div class="col-md-8">
+            <p class="h1 mt-0 text-highlight">
+                <span>&nbsp;</span> Rozmawiam, planuje, szkicuje, tropie nowinki techniczne. Do każdego zlecenia podchodzę z dużym zaangażowaniem. 
+            </p>
+        </div>
+    </div>
+  </div>
+</section>
+
+{% include 'sections/steps.njk' %}
+
+<section class="pb-small pb-md-medium" data-scroll-section>
+  <div class="container">
+    <div class="border overflow-hidden fade-in">
+      {% Image "src/assets/img/about/bwl.jpg", "Przemek Miros - Wywiad dla Business Woman and Life" %}
+    </div>
+  </div>
+</section>
+
+{% include 'sections/benefits.njk' %}
+{% include 'sections/form.njk' %}

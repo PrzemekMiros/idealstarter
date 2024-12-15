@@ -1,0 +1,38 @@
+<svg width="265" height="265" viewBox="0 0 265 265" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_3741_2)">
+<rect width="33" height="271" fill="var(--color-dark-1)"/>
+<rect x="211" width="54" height="271" fill="var(--color-dark-1)"/>
+<rect x="47" width="14" height="271" fill="var(--color-dark-1)"/>
+<rect x="94" width="14" height="271" fill="var(--color-dark-1)"/>
+<rect x="144" width="40" height="271" fill="var(--color-dark-1)"/>
+</g>
+<defs>
+    <style>
+        :root {
+            --color-accent-1: #e86344;
+            --color-accent-2: #e86344;
+            --color-dark-1: #090c0f;
+            --color-dark-2: #121416;
+            --color-light-1: #fafaf8;
+            --color-light-2: #f0f2f4;
+            --color-heading: #101b2b;
+            --color-text: #5e6265;
+            --color-border: #74787b;
+        }
+        @media (prefers-color-scheme:dark) {
+            :root {
+            --color-dark-1: #fafaf8;
+            --color-dark-2: #f0f2f4;
+            --color-light-1: #090c0f;
+            --color-light-2: #121416;
+            --color-heading: #fff;
+            --color-text: #bcbcbc;
+            --color-border: #74787b;
+            }
+          } 
+    </style>
+<clipPath id="clip0_3741_2">
+<rect width="265" height="265" fill="var(--color-dark-1)"/>
+</clipPath>
+</defs>
+</svg>

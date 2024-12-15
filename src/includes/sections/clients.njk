@@ -1,0 +1,13 @@
+<section class="pb-xsmall pb-md-large" data-scroll-section>
+  <div class="container">
+    <div class="row g-0">
+      {% for post in collections.clients %}
+      <div class="col-6 col-md-3 client-card">
+        <div class="fade-in">
+          <img src="{{ post.data.logo }}" loading="lazy" width="338" height="143" alt="{{ post.data.title }} - Logo" />
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

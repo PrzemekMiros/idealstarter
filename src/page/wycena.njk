@@ -1,0 +1,336 @@
+---
+layout: "layouts/base.njk"
+title: Wycena
+description: Wypełnij krótki brief żeby otrzymać bezpłatną wycenę. Dobry plan jest kluczem do udanego projektu.
+---
+
+<section class="brief" data-scroll-section>
+  <div class="container pt-large pt-md-xlarge pb-medium pb-md-large">
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="hero-card hero-card-shape bg-accent-1">
+          <svg class="hero-card-shape-svg" width="80%" height="auto" viewBox="0 0 691 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0V53C0 53 3.96649 35 28.2612 35C52.556 35 570.005 34.98 606.695 34.98C643.385 34.98 651 0 651 0H0Z" fill="var(--color-light-1)" />
+            <path d="M690.717 0C645.947 0 648.377 21.6981 625.99 29.2453C625.99 29.2453 612.849 0 634.262 0H690.717Z" fill="var(--color-light-1)" />
+          </svg>
+          <div class="hero-card-content p-4 py-5 p-md-5">
+            <p class="h5 fade-in mb-3 mt-2 mt-md-4 color-light">Główna | {{ title }}</p>
+            <h1 class="xxl split-lines my-2 my-md-3 uppercase color-light"> Darmowa wycena </h1>
+            <div class="line-x my-4"></div>
+            <div class="row g-3 align-items-center">
+              <div class="col-3 col-md-2">
+                 <img src="/assets/img/hero/avatar.png" class="fade-in" style="width:55px; height:55px;" alt="Przemek Miros - Avatar">
+              </div>
+              <div class="col-9 col-md-8">
+                <p class="h5 split-lines my-0 color-light">
+                  Wypełnij formularz żeby otrzymać wstępną wycenę
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="pt-xsmall d-md-none"></div>
+        <div class="hero-card bg-light-2">
+          <div class="multi-form p-4 p-md-5 pt-md-4">
+            <div class="progress-bar">
+              <div class="step">
+                <div class="bullet">
+                  <span>1</span>
+                </div>
+                <div class="check fas fa-check"></div>
+              </div>
+              <div class="step">
+                <div class="bullet">
+                  <span>2</span>
+                </div>
+                <div class="check fas fa-check"></div>
+              </div>
+              <div class="step">
+                <div class="bullet">
+                  <span>3</span>
+                </div>
+                <div class="check fas fa-check"></div>
+              </div>
+              <div class="step">
+                <div class="bullet">
+                  <span>4</span>
+                </div>
+                <div class="check fas fa-check"></div>
+              </div>
+              <div class="step">
+                <div class="bullet">
+                  <span>5</span>
+                </div>
+                <div class="check fas fa-check"></div>
+              </div>
+            </div>
+            <div class="form-outer">
+              <form action="" method="POST" id="briefForm">
+                <div class="page slide-page">
+                  <h3 class="mt-5 mb-1">Zaznacz jaki cel ma realizować strona </h3>
+                  <div class="row g-3 g-md-4 mt-0">
+                    <div class="col-md-6">
+                      <input type="checkbox" id="check1" name="kontakt_z_firma" class="form-input required">
+                      <label for="check1">Kontakt z firmą</label>
+                    </div>
+                    <div class="col-md-6">
+                      <input type="checkbox" id="check2" name="zakup_produktu" class="form-input required">
+                      <label for="check2">Zakup produktu</label>
+                    </div>
+                    <div class="col-md-6">
+                      <input type="checkbox" id="check3" name="zapis_na_newsletter" class="form-input required">
+                      <label for="check3">Zapis na newsletter</label>
+                    </div>
+                    <div class="col-md-6">
+                      <input type="checkbox" id="check4" name="zapis_na_kurs" class="form-input required">
+                      <label for="check4">Zapis na kurs</label>
+                    </div>
+                    <div class="col-md-6">
+                      <input type="checkbox" id="check5" name="informacje_o_firmie" class="form-input required">
+                      <label for="check5">Informacje o firmie</label>
+                    </div>
+                    <div class="col-md-6">
+                      <input type="checkbox" id="check6" name="zakup_uslugi" class="form-input required">
+                      <label for="check6">Zakup usługi</label>
+                    </div>
+                  </div>
+                  <div class="pt-xsmall pb-xsmall">
+                    <div class="line-x"></div>
+                  </div>
+                  <div class="mt-2 mb-4">
+                    <button class="button-anim firstNext next">
+                      <div class="button-anim-text">
+                        <span>Dalej</span>
+                        <span>Dalej</span>
+                      </div>
+                      <div class="button-anim-icon">
+                        <svg class="icon-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M11 16L15 12M15 12L11 8M15 12H3M4.51555 17C6.13007 19.412 8.87958 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C8.87958 3 6.13007 4.58803 4.51555 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+                <div class="page">
+                  <h3 class="mb-4 mt-5">Adresy stron które Ci się podobają</h3>
+                  <div class="row g-3 mt-3">
+                    <div class="col-md-6">
+                      <div class="floating-label">
+                        <input class="form-input floating-input required" type="text" name="url_one" placeholder="">
+                        <span class="highlight"></span>
+                        <label>Adres url 1</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="floating-label">
+                        <input type="text" name="url_two" class="form-input floating-input required" placeholder="">
+                        <span class="highlight"></span>
+                        <label>Adres url 2</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="floating-label">
+                        <input type="text" name="url_three" class="form-input floating-input" placeholder="">
+                        <span class="highlight"></span>
+                        <label>Adres url 3</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="floating-label">
+                        <input type="text" name="url_four" class="form-input floating-input required" placeholder="">
+                        <span class="highlight"></span>
+                        <label>Adres url 4</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pt-xsmall pb-xsmall">
+                    <div class="line-x"></div>
+                  </div>
+                  <div class="mt-2 mb-4">
+                    <button class="button-anim prev-1 prev">
+                      <div class="button-anim-text">
+                        <span>Wróć</span>
+                        <span>Wróć</span>
+                      </div>
+                      <div class="button-anim-icon">
+                        <svg class="icon-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M13 8L9 12M9 12L13 16M9 12H21M19.4845 7C17.8699 4.58803 15.1204 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C15.1204 21 17.8699 19.412 19.4845 17" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </div>
+                    </button>
+                    <button class="button-anim next-1 next">
+                      <div class="button-anim-text">
+                        <span>Dalej</span>
+                        <span>Dalej</span>
+                      </div>
+                      <div class="button-anim-icon">
+                        <svg class="icon-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M11 16L15 12M15 12L11 8M15 12H3M4.51555 17C6.13007 19.412 8.87958 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C8.87958 3 6.13007 4.58803 4.51555 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+                <div class="page">
+                  <h3 class="mb-1 mt-5">Zaznacz które elementy już posiadasz </h3>
+                  <div class="row g-3 g-md-4 mt-0">
+                    <div class="col-md-6">
+                      <input type="checkbox" id="check21" name="logo_na_strone" class="form-input required">
+                      <label for="check21">Logo</label>
+                    </div>
+                    <div class="col-md-6">
+                      <input type="checkbox" id="check22" name="opisy_na_strone" class="form-input required">
+                      <label for="check22">Opisy</label>
+                    </div>
+                    <div class="col-md-6">
+                      <input type="checkbox" id="check23" name="zdjecia_na_strone" class="form-input required">
+                      <label for="check23">Zdjęcia</label>
+                    </div>
+                    <div class="col-md-6">
+                      <input type="checkbox" id="check24" name="grafiki_na_strone" class="form-input required">
+                      <label for="check24">Grafiki</label>
+                    </div>
+                    <div class="col-md-6">
+                      <input type="checkbox" id="check25" name="domena_www" class="form-input required">
+                      <label for="check25">Domena</label>
+                    </div>
+                    <div class="col-md-6">
+                      <input type="checkbox" id="check26" name="hosting_www" class="form-input required">
+                      <label for="check26">Hosting</label>
+                    </div>
+                  </div>
+                  <div class="pt-xsmall pb-xsmall">
+                    <div class="line-x"></div>
+                  </div>
+                  <div class="mt-2 mb-4">
+                    <button class="button-anim prev-1 prev">
+                      <div class="button-anim-text">
+                        <span>Wróć</span>
+                        <span>Wróć</span>
+                      </div>
+                      <div class="button-anim-icon">
+                        <svg class="icon-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M13 8L9 12M9 12L13 16M9 12H21M19.4845 7C17.8699 4.58803 15.1204 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C15.1204 21 17.8699 19.412 19.4845 17" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </div>
+                    </button>
+                    <button class="button-anim next-1 next">
+                      <div class="button-anim-text">
+                        <span>Dalej</span>
+                        <span>Dalej</span>
+                      </div>
+                      <div class="button-anim-icon">
+                        <svg class="icon-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M11 16L15 12M15 12L11 8M15 12H3M4.51555 17C6.13007 19.412 8.87958 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C8.87958 3 6.13007 4.58803 4.51555 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+                <div class="page">
+                  <h3 class="mb-4 mt-5">Dodatkowe informacje</h3>
+                  <div class="floating-label">
+                    <textarea class="form-input floating-input floating-textarea" rows="6" name="dodatkowe_informacje" placeholder=" "></textarea>
+                    <span class="highlight"></span>
+                    <label>Wiadomość</label>
+                  </div>
+                  <div class="pt-xsmall pb-xsmall">
+                    <div class="line-x"></div>
+                  </div>
+                  <div class="mt-2 mb-4">
+                    <button class="button-anim prev-1 prev">
+                      <div class="button-anim-text">
+                        <span>Wróc</span>
+                        <span>Wróć</span>
+                      </div>
+                      <div class="button-anim-icon">
+                        <svg class="icon-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M13 8L9 12M9 12L13 16M9 12H21M19.4845 7C17.8699 4.58803 15.1204 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C15.1204 21 17.8699 19.412 19.4845 17" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </div>
+                    </button>
+                    <button class="button-anim next-1 next">
+                      <div class="button-anim-text">
+                        <span>Dalej</span>
+                        <span>Dalej</span>
+                      </div>
+                      <div class="button-anim-icon">
+                        <svg class="icon-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M11 16L15 12M15 12L11 8M15 12H3M4.51555 17C6.13007 19.412 8.87958 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C8.87958 3 6.13007 4.58803 4.51555 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+                <div class="page">
+                  <h3 class="mb-4 mt-5"> Dane kontaktowe</h3>
+                  <div class="row g-3 mt-3">
+                      <div class="col-md-6">
+                        <div class="floating-label">
+                            <input class="form-input floating-input required" type="text" name="imie_i_nazwisko" required placeholder="">
+                            <span class="highlight"></span>
+                            <label>Imię i nazwisko</label>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="floating-label">
+                            <input type="text" name="adres_email" class="form-input floating-input required" required placeholder="">
+                            <span class="highlight"></span>
+                            <label>Adres email</label>
+                        </div>                 
+                      </div>
+                      <div class="col-md-6">
+                        <div class="floating-label">
+                            <input type="text" name="numer_telefonu" class="form-input floating-input" placeholder="">
+                            <span class="highlight"></span>
+                            <label>Numer telefonu</label>
+                        </div> 
+                    </div>
+                    <div class="col-md-6">
+                        <div class="floating-label">
+                            <input type="text" name="nazwa_firmy" class="form-input floating-input required" placeholder="">
+                            <span class="highlight"></span>
+                            <label>Nazwa firmy</label>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="pt-xsmall pb-xsmall">
+                    <div class="line-x"></div>
+                  </div>
+                  <div class="mt-2 mb-4">
+                    <button class="button-anim prev-5 prev">
+                      <div class="button-anim-text">
+                        <span>Wróć</span>
+                        <span>Wróć</span>
+                      </div>
+                      <div class="button-anim-icon">
+                        <svg class="icon-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M13 8L9 12M9 12L13 16M9 12H21M19.4845 7C17.8699 4.58803 15.1204 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C15.1204 21 17.8699 19.412 19.4845 17" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </div>
+                    </button>
+                    <button class="button-anim submit" id="submit" type="submit">
+                      <div class="button-anim-text">
+                        <span>Wyślij</span>
+                        <span>Wyślij</span>
+                      </div>
+                      <div class="button-anim-icon">
+                        <svg class="icon-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M11 16L15 12M15 12L11 8M15 12H3M4.51555 17C6.13007 19.412 8.87958 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C8.87958 3 6.13007 4.58803 4.51555 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </div>
+                    </button>
+                    
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
