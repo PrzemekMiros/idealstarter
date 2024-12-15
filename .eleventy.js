@@ -18,9 +18,10 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/assets/js");
     eleventyConfig.addPassthroughCopy("src/assets/img"); 
     eleventyConfig.addPassthroughCopy("src/assets/fonts");
-    eleventyConfig.addPassthroughCopy("src/content/clients/img"); 
     eleventyConfig.addPassthroughCopy("src/content/posts/img"); 
     eleventyConfig.addPassthroughCopy("src/content/works/img"); 
+    eleventyConfig.addPassthroughCopy("src/content/clients/img"); 
+    eleventyConfig.addPassthroughCopy("src/content/reviews/img"); 
     eleventyConfig.addPassthroughCopy("src/static");
     eleventyConfig.addPassthroughCopy("src/admin");
     eleventyConfig.addWatchTarget("src/assets/sass");
@@ -54,10 +55,16 @@ module.exports = function(eleventyConfig) {
           return collectionApi.getFilteredByGlob('src/content/posts/**/*.md').reverse();
           });
 
+        // Collection reviews
+        eleventyConfig.addCollection("reviews", function(collectionApi) {
+          return collectionApi.getFilteredByGlob('src/content/reviews/**/*.md');
+          });
+
         // Collection clients
         eleventyConfig.addCollection("clients", function(collectionApi) {
           return collectionApi.getFilteredByGlob('src/content/clients/**/*.md');
           });
+
 
         // Collection faq
         eleventyConfig.addCollection("faq", function(collectionApi) {

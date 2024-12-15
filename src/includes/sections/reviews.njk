@@ -1,0 +1,44 @@
+<section class="pb-xsmall pb-md-small" data-scroll-section>
+    <div class="container">
+        <div class="row g-3">
+        {% for post in collections.reviews.slice(0, 12)%}
+            <div class="col-md-4">
+                <div class="rounded-md shadow p-5">
+                    <div class="row g-3">
+                        <div class="col-auto">
+                            <img src="{{ post.data.avatar }}" class="opinion-avatar" width="44px" height="44px" alt="Avatar">
+                        </div>
+                        <div class="col-auto">
+                            <p class="opinion-title h5 my-0">
+                                {{ post.data.title }}
+                            </p>
+                            <p class="opinion-date small my-1">
+                                {{ post.data.addate }}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="opinion-rating mt-3">
+                        <img src="/assets/img/opinion/rating.png" width="250" height="47" alt="Ocena">
+                    </div>
+                    <div class="opinion-content">
+                        <p class="mb-3">
+                            {{ post.data.review }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+        </div>
+    </div>
+</section>
+
+<style>
+    .opinion-avatar {
+     width: 44px;
+     border-radius: 50%;
+     border: 3px solid #fff;
+     }
+     .opinion-rating {
+     width: 100px
+     }
+</style>
