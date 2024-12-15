@@ -6,7 +6,7 @@ function animationMain() {
   easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
   direction: "vertical",
   gestureDirection: "vertical",
-  lerp: 0.25,
+  lerp: 0.18,
   smooth: 5,
   smoothTouch: false,
   touchMultiplier: 2,
