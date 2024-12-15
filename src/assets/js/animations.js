@@ -6,7 +6,7 @@ function animationMain() {
   easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
   direction: "vertical",
   gestureDirection: "vertical",
-  lerp: 0.15,
+  lerp: 0.25,
   smooth: 5,
   smoothTouch: false,
   touchMultiplier: 2,
@@ -230,97 +230,12 @@ function animationMain() {
 
          trigger: ".scrollContainer",
          start: "top 0%",
-         end: "bottom 99%",
+         end: "bottom 100%",
          scrub: true,
        }
      });
      };
     };
-
-
-    function filter() {
-      var projects = document.querySelectorAll('.project');
-      var startHeight = gsap.getProperty(".projects-inner", "height");
-      var state = Flip.getState('.project, .empty');
-      var filters = document.querySelectorAll('.option.is_active');
-    
-      if(filters.length) {
-        projects.forEach(function(project) {
-          gsap.set(project, { display: 'block' });
-          project.classList.remove('filtered');
-        });
-        filters.forEach(function(filter) {
-          var type = filter.dataset.filter.split(':')[0];
-          var value = filter.dataset.filter.split(':')[1];
-          projects.forEach(function(project) {
-            if(project.getAttribute('data-' + type) != value) {
-              gsap.set(project, { display: 'none' });
-              project.classList.add('filtered');
-            }
-          });
-        });
-      }
-      else {
-        projects.forEach(function(project) {
-          gsap.set(project, { display: 'block' });
-          project.classList.remove('filtered');
-        });
-      }
-    
-      if(document.querySelectorAll('.project:not(.filtered)').length) {
-        gsap.set('.empty', { display: 'none' });
-      }
-      else {
-        gsap.set('.empty', { display: 'block' });
-      }
-      
-      var endHeight = gsap.getProperty(".projects-inner", "height");
-    
-      var flip = Flip.from(state, {
-        duration: 0.6,
-        ease: "power3.inOut",
-        stagger: 0.08,
-        absolute: true,
-        onEnter: elements => gsap.fromTo(elements, {opacity: 0, scale: 0}, {opacity: 1, scale: 1, duration: .6}),
-        onLeave: elements => gsap.fromTo(elements, {opacity: 1, scale: 1}, {opacity: 0, scale: 0, duration: .6})
-      })
-      flip.fromTo(".projects-inner", {
-        height: startHeight
-      }, {
-        height: endHeight,
-        clearProps: "height",
-        duration: flip.duration()
-      }, 0);
-
-        // Scroll to ".portfolio" after filtering
-        var portfolioElement = document.querySelector('.portfolio');
-        if (portfolioElement) {
-        portfolioElement.scrollIntoView({ behavior: 'smooth' });
-        }
-    
-    }
-    
-    document.querySelectorAll('.filter-buttons').forEach(function(button) {
-      button.querySelectorAll('.option').forEach(function(option) {
-        option.addEventListener('click', function(event) {
-          is_active = false;
-          ScrollTrigger.refresh();
-          button.querySelectorAll('.option').forEach(function(option2) {
-            if(option2.classList.contains('is_active')) {
-              option2.classList.remove('is_active');
-              if(option2 == option) {
-                is_active = true;
-              }
-            }
-          });
-          if(!is_active) {
-            event.currentTarget.classList.add('is_active');
-          }
-          filter();
-          event.preventDefault();
-        });
-      });
-    });
 
          // Nav menu
          const menuToggle = document.getElementById("menuToggle");
