@@ -1,0 +1,7 @@
+.shadow {
+  box-shadow: 0 5px 35px rgba(17, 17, 17, 0.0666666667);
+}
+
+.rounded-md {
+  border-radius: 15px;
+}
