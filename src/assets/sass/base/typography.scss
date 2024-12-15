@@ -194,8 +194,10 @@ h6,
   color: var(--color-text);
 }
 
-ol li {
-  margin-bottom: 1em;
+small,
+.small {
+  font-size: var(--step--2);
+  line-height: 1.4;
 }
 
 blockquote {
@@ -204,9 +206,4 @@ blockquote {
   border-left: 3px solid var(--color-accent-1);
 }
 
-small,
-.small {
-  font-size: 3vw;
-  line-height: 1.4;
-}
 

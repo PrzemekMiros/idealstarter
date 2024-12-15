@@ -1,18 +1,19 @@
 <section class="pt-small pb-small" data-scroll-section>
   <div class="container">
-    <div class="service-wrap">
-      <h2 class="">Realizacje</h2>
+    <div class="service-wrap w-md-75 mx-auto">
       {% for post in collections.works%}
-          <div class="works-grid-item border bg-light-1 row g-0 flex-md-row-reverse align-items-center">
+          <div class="border shadow mb-5">
+          <div class="row flex-md-row-reverse align-items-center">
             <div class="col-lg-6">
               <a href="{{ post.url }}" title="{{ post.data.title }}">
-                <div class="portfolio-item">
+                <div class="p-2">
                     {% workImage "src/" + post.data.thumbnail,
                     post.data.title %}
                 </div>
               </a>
             </div>
             <div class="col-lg-6">
+              <div class="p-5">
               <p class="">
                 {{ post.data.client }}
               </p>
@@ -22,7 +23,6 @@
               <p class="">
                 {{ post.data.description }}
               </p>
-
               <a href="{{ post.data.link }}" title="{{ post.data.title }}" class="button-anim magnetic fade-in"
                   data-strength="60"
                   target="_blank">
@@ -37,7 +37,9 @@
                   </svg>
                 </div>
               </a>
+                </div>
             </div>
+          </div>
           </div>
       {% endfor %}
     </div>

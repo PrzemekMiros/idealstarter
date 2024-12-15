@@ -12,121 +12,6 @@ function appMain() {
 		}
 	});
 
-	// Lazy blur images
-	if (document.querySelector(".blur-load")) {
-		const blurImgWrap = document.querySelectorAll(".blur-load");
-		blurImgWrap.forEach((item) => {
-			const img = item.querySelector("picture img");
-			function loaded() {
-				item.classList.add("loaded");
-			}
-			if (img.complete) {
-				loaded();
-			} else {
-				img.addEventListener("load", loaded);
-			}
-		});
-	}
-
-	if (document.querySelector('.swiper-opinion')) {
-		var swiper = new Swiper(".swiper-opinion", {
-			grabCursor: true,
-			slidesPerView: 1,
-			spaceBetween: 15,
-			lazyPreloadPrevNext: 1,
-			centeredSlides: false,
-			loop: true,
-			pagination: {
-				el: ".swiper-pagination",
-				clickable: true
-			},
-			scrollbar: {
-				el: '.swiper-scrollbar',
-			},
-			navigation: {
-				nextEl: '.swiper-button-next',
-				prevEl: '.swiper-button-prev',
-			},
-			autoplay: {
-				delay: 5000,
-			},
-			keyboard: {
-				enabled: true
-			},
-			mousewheel: false,
-			breakpoints: {
-				460: {
-					slidesPerView: 1.25
-				},
-				768: {
-					slidesPerView: 1.8
-				},
-				991: {
-					slidesPerView: 2
-				},
-				1024: {
-					slidesPerView: 2
-				},
-				1200: {
-					slidesPerView: 2
-				}
-			}
-		});
-	};
-
-	if (document.querySelector('.swiper-works')) {
-		var swiper = new Swiper(".swiper-works", {
-			grabCursor: true,
-			slidesPerView: 1,
-			spaceBetween: 15,
-			centeredSlides: false,
-			loop: true,
-			lazy: {
-				loadPrevNext: true, // pre-loads the next image to avoid showing a loading placeholder if possible
-				loadPrevNextAmount: 2 //or, if you wish, preload the next 2 images
-			},
-			pagination: {
-				el: ".swiper-pagination",
-				clickable: true
-			},
-			scrollbar: {
-				el: '.swiper-scrollbar',
-			},
-			navigation: {
-				nextEl: '.swiper-button-next',
-				prevEl: '.swiper-button-prev',
-			},
-			autoplay: {
-				delay: 4000,
-			},
-			keyboard: {
-				enabled: true
-			},
-			mousewheel: false,
-		});
-	};
-
-
-	if (document.querySelector('.works-grid-item')) {
-		var worksGridItems = document.querySelectorAll('.works-grid-item');
-		worksGridItems.forEach(function(item) {
-			item.addEventListener('mouseenter', function(event) {
-				worksGridItems.forEach(function(innerItem) {
-					if (innerItem !== item) {
-						innerItem.classList.add('works-grid-item-effect');
-					}
-				});
-			});
-			item.addEventListener('mouseleave', function(event) {
-				worksGridItems.forEach(function(innerItem) {
-					if (innerItem !== item) {
-						innerItem.classList.remove('works-grid-item-effect');
-					}
-				});
-			});
-		});
-	}
-
 	// Greeting
 	if (document.querySelector("#greeting")) {
 		const greeting = document.getElementById("greeting");
@@ -215,8 +100,6 @@ function appMain() {
 			});
 	};
 
-
-
 	if (document.querySelector('.form-outer')) {
 		initMultiStepForm();
 
@@ -290,7 +173,6 @@ function appMain() {
 
 	}
 
-
 	function handleSubmit(formId, redirectUrl) {
 		var form = document.getElementById(formId);
 
@@ -321,28 +203,6 @@ function appMain() {
 	}
 	handleSubmit('briefForm', '/wyslano-formularz');
 	handleSubmit('contactForm', '/wyslano-formularz');
-
-
-	const modals = document.querySelectorAll("[data-modal]");
-	modals.forEach(function(trigger) {
-		trigger.addEventListener("click", function(event) {
-			event.preventDefault();
-			const modal = document.getElementById(trigger.dataset.modal);
-			const video = modal.querySelector("#modalVideo");
-
-			modal.classList.add("open");
-
-			const exits = modal.querySelectorAll(".modal-exit");
-			exits.forEach(function(exit) {
-				exit.addEventListener("click", function(event) {
-					event.preventDefault();
-					modal.classList.remove("open");
-					video.pause();
-				});
-			});
-			video.play();
-		});
-	});
 
 // End
 };
