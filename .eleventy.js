@@ -59,11 +59,6 @@ module.exports = function(eleventyConfig) {
           return collectionApi.getFilteredByGlob('src/content/clients/**/*.md');
           });
 
-        // Collection towns
-        eleventyConfig.addCollection("towns", function(collectionApi) {
-          return collectionApi.getFilteredByGlob('src/content/towns/**/*.md');
-          });
-
         // Collection faq
         eleventyConfig.addCollection("faq", function(collectionApi) {
           return collectionApi.getFilteredByGlob('src/content/faq/**/*.md');

@@ -1,4 +1,0 @@
-{
-    "layout": "layouts/town.njk",
-    "permalink": "/{{ title | slugify }}/"
-}
