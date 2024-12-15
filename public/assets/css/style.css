@@ -3166,6 +3166,18 @@
   .ps-lg-5 {
     padding-left: 3rem !important;
   }
+  .w-lg-60 {
+    width: 60%;
+  }
+  .w-lg-70 {
+    width: 70%;
+  }
+  .w-lg-75 {
+    width: 75%;
+  }
+  .w-lg-80 {
+    width: 80%;
+  }
 }
 @media (min-width: 1200px) {
   .d-xl-inline {
@@ -3625,6 +3637,18 @@
   }
   .ps-xl-5 {
     padding-left: 3rem !important;
+  }
+  .w-xl-60 {
+    width: 60%;
+  }
+  .w-xl-70 {
+    width: 70%;
+  }
+  .w-xl-75 {
+    width: 75%;
+  }
+  .w-xl-80 {
+    width: 80%;
   }
 }
 @media (min-width: 1400px) {
@@ -5123,15 +5147,18 @@ html.lenis, html.lenis body {
   }
 }
 .shadow-1 {
-  box-shadow: 0 5px 15px rgba(17, 17, 17, 0.0666666667);
+  box-shadow: 0 5px 12px rgba(17, 17, 17, 0.0666666667);
+  overflow: hidden;
 }
 
 .shadow-2 {
   box-shadow: 0 5px 20px rgba(17, 17, 17, 0.0666666667);
+  overflow: hidden;
 }
 
 .shadow-3 {
   box-shadow: 0 5px 25px rgba(17, 17, 17, 0.0666666667);
+  overflow: hidden;
 }
 
 .rounded-md {

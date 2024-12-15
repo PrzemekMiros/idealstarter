@@ -1,13 +1,16 @@
 .shadow-1 {
-  box-shadow: 0 5px 15px rgba(17, 17, 17, 0.0666666667);
+  box-shadow: 0 5px 12px rgba(17, 17, 17, 0.0666666667);
+  overflow: hidden;
 }
 
 .shadow-2 {
   box-shadow: 0 5px 20px rgba(17, 17, 17, 0.0666666667);
+  overflow: hidden;
 }
 
 .shadow-3 {
   box-shadow: 0 5px 25px rgba(17, 17, 17, 0.0666666667);
+  overflow: hidden;
 }
 
 .rounded-md {
