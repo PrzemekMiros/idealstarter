@@ -1,8 +1,20 @@
 
-.shadow {
+.shadow-1 {
+    box-shadow: 0 5px 15px #1111;
+}
+.shadow-2 {
+    box-shadow: 0 5px 20px #1111;
+}
+.shadow-3 {
     box-shadow: 0 5px 25px #1111;
 }
 
 .rounded-md {
     border-radius: 15px;
+}
+.rounded-lg {
+    border-radius: 25px;
+}
+.rounded-full {
+    border-radius: 50%;
 }

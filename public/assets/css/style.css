@@ -5122,12 +5122,28 @@ html.lenis, html.lenis body {
     width: clamp(200px, 18vw, 275px);
   }
 }
-.shadow {
+.shadow-1 {
+  box-shadow: 0 5px 15px rgba(17, 17, 17, 0.0666666667);
+}
+
+.shadow-2 {
+  box-shadow: 0 5px 20px rgba(17, 17, 17, 0.0666666667);
+}
+
+.shadow-3 {
   box-shadow: 0 5px 25px rgba(17, 17, 17, 0.0666666667);
 }
 
 .rounded-md {
   border-radius: 15px;
+}
+
+.rounded-lg {
+  border-radius: 25px;
+}
+
+.rounded-full {
+  border-radius: 50%;
 }
 
 /**
