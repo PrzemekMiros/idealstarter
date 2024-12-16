@@ -10,7 +10,7 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     background: var(--color-accent-1);
-    color: var(--color-light-1);
+    color: #fff;
     cursor: pointer; 
   }
   
@@ -43,7 +43,7 @@
   .button-anim-icon {
     position: relative;
     padding: .65em .6em .35em;
-    background: var(--color-light-1);
+    background: #fff;
     border-radius: 50%; 
   }
   
@@ -129,20 +129,20 @@
       }
       
       .button-anim:hover .button-anim-icon .icon-pencil path {
-        fill: var(--color-light-1)
+        fill: #fff
       }
       
       .button-anim:hover .button-anim-icon .icon-line {
         height: 1px;
-        background-color: var(--color-light-1)
+        background-color: #fff
       }
 
       .button-anim:hover .button-anim-icon .icon-link path,
       .button-anim:hover .button-anim-icon .icon-link polygon,
       .button-anim:hover .button-anim-icon .icon-dollar path {
-        fill: var(--color-light-1)
+        fill: #fff
       }
       .button-anim:hover .button-anim-icon .icon-arrow {
-        stroke: var(--color-light-1)
+        stroke: #fff
       }
 }

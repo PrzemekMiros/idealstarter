@@ -53,8 +53,9 @@
 
 .desktop-nav ul li a {
   padding: 1em 2em;
-  color: var(--color-heading);
   font-weight: 500;
+  font-size: 90%;
+  color: var(--color-heading);
   letter-spacing: 1px;
 }
 
@@ -168,9 +169,9 @@
 
 @media(min-width:767px) {
   .site-header {
-    left: 7px; 
+    left: 4px; 
     top: 0;
-    width: calc(100% - 7px)
+    width: calc(100% - 4px)
   }   
 
 }

@@ -4219,7 +4219,7 @@ body {
   height: 100%;
   text-rendering: optimizeLegibility;
   font-family: var(--font-primary);
-  line-height: 1.2;
+  line-height: 1.4;
   color: var(--color-text);
   background: var(--color-light-2);
 }
@@ -4681,7 +4681,7 @@ html.lenis, html.lenis body {
     top: -5px;
     left: 0;
     height: calc(100vh + 10px);
-    width: 5px;
+    width: 4px;
     z-index: 999;
   }
   .scrollprogress {
@@ -4690,7 +4690,7 @@ html.lenis, html.lenis body {
     left: 0;
     -webkit-appearance: none;
     appearance: none;
-    width: 7px;
+    width: 4px;
     height: 0;
     border: none;
     border-radius: 2px;
@@ -4764,8 +4764,9 @@ html.lenis, html.lenis body {
 
 .desktop-nav ul li a {
   padding: 1em 2em;
-  color: var(--color-heading);
   font-weight: 500;
+  font-size: 90%;
+  color: var(--color-heading);
   letter-spacing: 1px;
 }
 
@@ -4888,9 +4889,9 @@ html.lenis, html.lenis body {
 
 @media (min-width: 767px) {
   .site-header {
-    left: 7px;
+    left: 4px;
     top: 0;
-    width: calc(100% - 7px);
+    width: calc(100% - 4px);
   }
 }
 .button-anim {
@@ -4904,7 +4905,7 @@ html.lenis, html.lenis body {
   text-transform: uppercase;
   letter-spacing: 1px;
   background: var(--color-accent-1);
-  color: var(--color-light-1);
+  color: #fff;
   cursor: pointer;
 }
 
@@ -4937,7 +4938,7 @@ html.lenis, html.lenis body {
 .button-anim-icon {
   position: relative;
   padding: 0.65em 0.6em 0.35em;
-  background: var(--color-light-1);
+  background: #fff;
   border-radius: 50%;
 }
 
@@ -5020,19 +5021,19 @@ html.lenis, html.lenis body {
     transform: scale(1);
   }
   .button-anim:hover .button-anim-icon .icon-pencil path {
-    fill: var(--color-light-1);
+    fill: #fff;
   }
   .button-anim:hover .button-anim-icon .icon-line {
     height: 1px;
-    background-color: var(--color-light-1);
+    background-color: #fff;
   }
   .button-anim:hover .button-anim-icon .icon-link path,
   .button-anim:hover .button-anim-icon .icon-link polygon,
   .button-anim:hover .button-anim-icon .icon-dollar path {
-    fill: var(--color-light-1);
+    fill: #fff;
   }
   .button-anim:hover .button-anim-icon .icon-arrow {
-    stroke: var(--color-light-1);
+    stroke: #fff;
   }
 }
 .hero {
@@ -5197,7 +5198,7 @@ html.lenis, html.lenis body {
 }
 
 .bg-squares {
-  background: #f7f7f7 url(/assets/img/template/bgr-squeres.svg) 0 0/64px;
+  background: url(/assets/img/template/bgr-squeres.svg) 0 0/64px;
 }
 
 .op-5 {
