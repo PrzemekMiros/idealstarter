@@ -24,3 +24,7 @@
 .rounded-full {
   border-radius: 50%;
 }
+
+.bg-squares {
+  background: #f7f7f7 url(/assets/img/template/bgr-squeres.svg) 0 0/64px;
+}

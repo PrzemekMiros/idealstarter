@@ -1,8 +1,8 @@
-<section class="pt-large pb-large bg-light-1">
+<section class="pt-large pb-large bg-light-1 bg-squares">
   <div class="container">
     <div class="service-wrap w-xl-80 mx-auto">
       {% for post in collections.works.slice(0, 8) %}
-          <div class="rounded-md shadow-2 mb-5">
+          <div class="rounded-md shadow-2 mb-5 bg-light-1">
           <div class="row flex-md-row-reverse align-items-center">
             <div class="col-md-6">
               <a href="{{ post.url }}" title="{{ post.data.title }}">

@@ -4548,7 +4548,7 @@ h5,
 h6,
 .h6 {
   font-family: var(--font-secondary);
-  font-weight: 500;
+  font-weight: 600;
   color: var(--color-heading);
 }
 
@@ -4702,8 +4702,12 @@ html.lenis, html.lenis body {
   bottom: 0;
   background-color: var(--color-light-1);
   transition: all 0.3s ease-in-out;
-  opacity: 0.95;
+  opacity: 0;
   z-index: -1;
+}
+
+.site-header.scrolled::before {
+  opacity: 0.95;
 }
 
 .site-header.hide {
@@ -5163,6 +5167,10 @@ html.lenis, html.lenis body {
 
 .rounded-full {
   border-radius: 50%;
+}
+
+.bg-squares {
+  background: #f7f7f7 url(/assets/img/template/bgr-squeres.svg) 0 0/64px;
 }
 
 /**
