@@ -4116,9 +4116,9 @@
   --color-accent-2: #1253b4;
   --color-dark-1: #080714;
   --color-dark-2: #131227;
-  --color-light-1: #f5f5f9;
-  --color-light-2: #ebebf0;
-  --color-light-3: #fdfdfd;
+  --color-light-1: #fdfdfd;
+  --color-light-2: #f7f7f7;
+  --color-light-3: #ebe9e9;
   --color-heading: #101b2b;
   --color-text: #5e6265;
   --color-border: #74787b87;
@@ -4126,8 +4126,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-dark-1: #f8f8fd;
-    --color-dark-2: #f1f1f6;
+    --color-dark-1: #fdfdfd;
+    --color-dark-2: #f7f7f7;
     --color-light-1: #080714;
     --color-light-2: #131227;
     --color-light-3: #131227;
@@ -4176,10 +4176,6 @@
 .color-accent-2 {
   color: var(--color-accent-2) !important;
   text-shadow: none;
-}
-
-.color-light {
-  color: #fff !important;
 }
 
 .color-light-1 {
@@ -4558,13 +4554,13 @@ h6,
 
 .xxl {
   margin-bottom: 0.5em;
-  font-size: var(--step--5);
+  font-size: var(--step-5);
   line-height: 1.1;
 }
 
 .xl {
   margin-bottom: 0.5em;
-  font-size: var(--step--4);
+  font-size: var(--step-4);
   line-height: 1.25;
 }
 
@@ -5143,17 +5139,17 @@ html.lenis, html.lenis body {
   }
 }
 .shadow-1 {
-  box-shadow: 0 5px 12px rgba(17, 17, 17, 0.0509803922);
+  box-shadow: 0 1px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(0, 14, 35, 0.05);
   overflow: hidden;
 }
 
 .shadow-2 {
-  box-shadow: 0 5px 20px rgba(17, 17, 17, 0.0666666667);
+  box-shadow: 0 1px rgba(0, 0, 0, 0.05), 0 4px 20px rgba(0, 14, 35, 0.05);
   overflow: hidden;
 }
 
 .shadow-3 {
-  box-shadow: 0 5px 25px rgba(17, 17, 17, 0.0666666667);
+  box-shadow: 0 1px rgba(0, 0, 0, 0.05), 0 4px 30px rgba(0, 14, 35, 0.05);
   overflow: hidden;
 }
 

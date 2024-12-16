@@ -115,13 +115,13 @@ h6,
 
 .xxl {
   margin-bottom: 0.5em;
-  font-size: var(--step--5);
+  font-size: var(--step-5);
   line-height: 1.1;
 }
 
 .xl {
   margin-bottom: 0.5em;
-  font-size: var(--step--4);
+  font-size: var(--step-4);
   line-height: 1.25;
 }
 
