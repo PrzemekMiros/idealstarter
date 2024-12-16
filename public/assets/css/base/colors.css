@@ -1,12 +1,12 @@
 :root, .light {
   --color-accent-1: #b41224;
-  --color-accent-2: #1253b4;
+  --color-accent-2: #b8280e;
   --color-dark-1: #080714;
   --color-dark-2: #131227;
   --color-light-1: #fdfdfd;
   --color-light-2: #f7f7f7;
   --color-light-3: #ebe9e9;
-  --color-heading: #101b2b;
+  --color-heading: #0e1d34;
   --color-text: #5e6265;
   --color-border: #74787b87;
 }
@@ -71,6 +71,10 @@
 
 .color-light-2 {
   color: var(--color-light-2) !important;
+}
+
+.color-light-3 {
+  color: var(--color-light-3) !important;
 }
 
 .color-dark {

@@ -28,3 +28,15 @@
 .bg-squares {
   background: #f7f7f7 url(/assets/img/template/bgr-squeres.svg) 0 0/64px;
 }
+
+.op-5 {
+  opacity: 0.5;
+}
+
+.op-6 {
+  opacity: 0.6;
+}
+
+.op-7 {
+  opacity: 0.7;
+}

@@ -4,7 +4,7 @@
       {% for post in collections.clients.slice(0, 6) %}
       <div class="col-6 col-md-2">
         <div class="client-card p-4 bg-dark-2 rounded-md">
-          <img src="{{ post.data.logo }}" loading="lazy" width="175" height="74" alt="{{ post.data.title }} - Logo" />
+          <img src="{{ post.data.logo }}" loading="lazy" decoding="async" width="175" height="74" alt="{{ post.data.title }} - Logo" />
         </div>
       </div>
       {% endfor %}

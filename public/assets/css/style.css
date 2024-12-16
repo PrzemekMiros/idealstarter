@@ -4113,13 +4113,13 @@
 }
 :root, .light {
   --color-accent-1: #b41224;
-  --color-accent-2: #1253b4;
+  --color-accent-2: #b8280e;
   --color-dark-1: #080714;
   --color-dark-2: #131227;
   --color-light-1: #fdfdfd;
   --color-light-2: #f7f7f7;
   --color-light-3: #ebe9e9;
-  --color-heading: #101b2b;
+  --color-heading: #0e1d34;
   --color-text: #5e6265;
   --color-border: #74787b87;
 }
@@ -4184,6 +4184,10 @@
 
 .color-light-2 {
   color: var(--color-light-2) !important;
+}
+
+.color-light-3 {
+  color: var(--color-light-3) !important;
 }
 
 .color-dark {
@@ -4538,7 +4542,12 @@ html.is-rendering .transition-fade {
 h1,
 .h1,
 h2,
-.h2,
+.h2 {
+  font-family: var(--font-secondary);
+  font-weight: 600;
+  color: var(--color-heading);
+}
+
 h3,
 .h3,
 h4,
@@ -4548,7 +4557,7 @@ h5,
 h6,
 .h6 {
   font-family: var(--font-secondary);
-  font-weight: 600;
+  font-weight: 500;
   color: var(--color-heading);
 }
 
@@ -4876,7 +4885,7 @@ html.lenis, html.lenis body {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
-  background: var(--color-dark-1);
+  background: var(--color-accent-1);
   color: var(--color-light-1);
   cursor: pointer;
 }
@@ -4910,7 +4919,7 @@ html.lenis, html.lenis body {
 .button-anim-icon {
   position: relative;
   padding: 0.65em 0.6em 0.35em;
-  background: var(--color-accent-1);
+  background: var(--color-light-1);
   border-radius: 50%;
 }
 
@@ -4922,14 +4931,14 @@ html.lenis, html.lenis body {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #fff;
-  outline: 1px solid var(--color-accent-1);
+  background: var(--color-accent-2);
+  outline: 1px solid var(--color-accent-2);
   transform: scale(0);
   transition: 0.5s cubic-bezier(0.79, 0, 0.07, 0.88);
 }
 
 .icon-arrow {
-  stroke: #fff;
+  stroke: var(--color-accent-1);
 }
 
 .icon-line {
@@ -4938,7 +4947,7 @@ html.lenis, html.lenis body {
   left: 25%;
   width: 52%;
   height: 1px;
-  background: #fff;
+  background: var(--color-accent-1);
 }
 
 .icon-pencil {
@@ -4993,19 +5002,19 @@ html.lenis, html.lenis body {
     transform: scale(1);
   }
   .button-anim:hover .button-anim-icon .icon-pencil path {
-    fill: var(--color-accent-1);
+    fill: var(--color-light-1);
   }
   .button-anim:hover .button-anim-icon .icon-line {
     height: 1px;
-    background-color: var(--color-accent-1);
+    background-color: var(--color-light-1);
   }
   .button-anim:hover .button-anim-icon .icon-link path,
   .button-anim:hover .button-anim-icon .icon-link polygon,
   .button-anim:hover .button-anim-icon .icon-dollar path {
-    fill: var(--color-accent-1);
+    fill: var(--color-light-1);
   }
   .button-anim:hover .button-anim-icon .icon-arrow {
-    stroke: var(--color-accent-1);
+    stroke: var(--color-light-1);
   }
 }
 .hero {
@@ -5171,6 +5180,18 @@ html.lenis, html.lenis body {
 
 .bg-squares {
   background: #f7f7f7 url(/assets/img/template/bgr-squeres.svg) 0 0/64px;
+}
+
+.op-5 {
+  opacity: 0.5;
+}
+
+.op-6 {
+  opacity: 0.6;
+}
+
+.op-7 {
+  opacity: 0.7;
 }
 
 /**
