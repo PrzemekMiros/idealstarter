@@ -29,9 +29,9 @@ function animationMain() {
             let offsetPosition;
 
             if (elementPosition > currentScroll) {
-                offsetPosition = elementPosition - -15; 
+                offsetPosition = elementPosition - -10; 
             } else {
-                offsetPosition = elementPosition - 100; 
+                offsetPosition = elementPosition - 92; 
             }
             scrollToSection(offsetPosition); 
         }
@@ -239,6 +239,7 @@ function animationMain() {
 
          // Nav menu
          const menuToggle = document.getElementById("menuToggle");
+         const menuLinks = document.querySelectorAll(".main-menu a");
          const menuBar = gsap.timeline();
          var tl = gsap.timeline({ paused: true});
          tl.to('.fullpage-menu', {
@@ -256,7 +257,7 @@ function animationMain() {
              y:"110%",
              stagger: 0.1,
              ease: 'Expo.easeInOut'
-         }, "-=0.6");
+         }, "-=0.8");
          tl.from('.line-xh', {
           duration: 1,
           stagger: .1,
@@ -269,16 +270,12 @@ function animationMain() {
              tl.reversed(!tl.reversed());
            // menuWrap.classList.toggle("active");
          });
-
-         if (document.querySelector('.send-icon-big')) {
-          gsap.from('.send-icon-big', {
-           yPercent: 120,
-           xPercent: -100,
-           duration: .75,
-           delay: .35
+         menuLinks.forEach(link => {
+          link.addEventListener('click', function () {
+              menuBar.reversed(!menuBar.reversed());
+              tl.reversed(!tl.reversed());
           });
-         };
-
+      });
   // End animation
 }
 

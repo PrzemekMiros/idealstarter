@@ -226,7 +226,7 @@ html.disable--interaction.show--consent,html.disable--interaction.show--consent 
 }
 #cc-main .cm--right{
     margin-left:var(--cc-modal-margin);
-    right:var(--cc-modal-margin)
+    right:var(--cc-modal-margin);
 }
 #cc-main .cm__body{
     display:flex;
@@ -633,6 +633,11 @@ html.disable--interaction.show--consent,html.disable--interaction.show--consent 
     }
     #cc-main .cm--flip .cm__btn-group,#cc-main .cm--flip .cm__btns{
         flex-direction:column-reverse!important
+    }
+}
+@media(max-width:768px) {
+    #cc-main .cm--right{
+        left: 0;
     }
 }
 #cc-main .pm-wrapper{

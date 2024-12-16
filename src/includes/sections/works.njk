@@ -11,14 +11,13 @@
         </div>
     <div class="service-wrap w-xl-80 mx-auto">
       {% for post in collections.works.slice(0, 5) %}
+      <a href="{{ post.data.link }}" title="{{ post.data.title }}">
           <div class="rounded-md shadow-2 mb-5 bg-light-1">
           <div class="row flex-md-row-reverse align-items-center">
             <div class="col-md-6">
-              <a href="{{ post.url }}" title="{{ post.data.title }}">
                 <div class="p-2">
                     {% workImage "src/" + post.data.thumbnail, post.data.title %}
                 </div>
-              </a>
             </div>
             <div class="col-md-6">
               <div class="p-2 p-md-5">
@@ -31,24 +30,11 @@
               <p class="">
                 {{ post.data.description }}
               </p>
-              <a href="{{ post.data.link }}" title="{{ post.data.title }}" class="button-anim magnetic"
-                  data-strength="60"
-                  target="_blank">
-                <div class="button-anim-text">
-                  <span>Zobacz online</span>
-                  <span>Zobacz online</span>
-                </div>
-
-                <div class="button-anim-icon">
-                  <svg class="icon-link" width="18" height="18" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
-                    <g><path fill="var(--color-accent-1)" d="M83.3,79.7c0,2-1.6,3.6-3.6,3.6H20.3c-2,0-3.6-1.6-3.6-3.6V20.3c0-2,1.6-3.6,3.6-3.6h23.4V9.5H20.3   c-6,0-10.8,4.8-10.8,10.8v59.4c0,6,4.8,10.8,10.8,10.8h59.4c6,0,10.8-4.8,10.8-10.8V56.3h-7.2V79.7z"/><polygon fill="var(--color-accent-1)" points="56.3,9.5 56.3,16.7 78.2,16.7 49.9,45 55,50.1 83.3,21.8 83.3,43.7 90.5,43.7 90.5,9.5  "/></g>
-                  </svg>
-                </div>
-              </a>
                 </div>
             </div>
           </div>
           </div>
+        </a>
       {% endfor %}
     </div>
   </div>
