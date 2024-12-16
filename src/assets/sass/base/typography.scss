@@ -34,10 +34,20 @@
     format("woff2");
 }
 
+@font-face {
+  font-display: swap;
+  font-family: "Squarepeg";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/assets/fonts/SquarePeg-Regular.ttf")
+    format("woff2");
+}
+
 
 :root {
   --font-primary: "Poppins";
   --font-secondary: "Poppins";
+  --font-handwrite: "Squarepeg";
   --fluid-min-width: 320;
   --fluid-max-width: 1240;
   --fluid-screen: 100vw;
@@ -54,57 +64,57 @@
 }
 
 :root {
-  --f--2-min: 12.50;
-  --f--2-max: 12.80;
+  --f--2-min: 12.64;
+  --f--2-max: 9.57;
   --step--2: calc(
     ((var(--f--2-min) / 16) * 1rem) + (var(--f--2-max) - var(--f--2-min)) *
       var(--fluid-bp)
   );
 
-  --f--1-min: 15.00;
-  --f--1-max: 16.00;
+  --f--1-min: 14.22;
+  --f--1-max: 12.75;
   --step--1: calc(
     ((var(--f--1-min) / 16) * 1rem) + (var(--f--1-max) - var(--f--1-min)) *
       var(--fluid-bp)
   );
 
-  --f-0-min: 18.00;
-  --f-0-max: 20.00;
+  --f-0-min: 16.00;
+  --f-0-max: 17.00;
   --step-0: calc(
     ((var(--f-0-min) / 16) * 1rem) + (var(--f-0-max) - var(--f-0-min)) *
       var(--fluid-bp)
   );
 
-  --f-1-min: 21.60;
-  --f-1-max: 25.00;
+  --f-1-min: 18.00;
+  --f-1-max: 22.66;
   --step-1: calc(
     ((var(--f-1-min) / 16) * 1rem) + (var(--f-1-max) - var(--f-1-min)) *
       var(--fluid-bp)
   );
 
-  --f-2-min: 25.92;
-  --f-2-max: 31.25;
+  --f-2-min: 20.25;
+  --f-2-max: 30.21;
   --step-2: calc(
     ((var(--f-2-min) / 16) * 1rem) + (var(--f-2-max) - var(--f-2-min)) *
       var(--fluid-bp)
   );
 
-  --f-3-min: 31.10;
-  --f-3-max: 39.06;
+  --f-3-min: 22.78;
+  --f-3-max: 40.27;
   --step-3: calc(
     ((var(--f-3-min) / 16) * 1rem) + (var(--f-3-max) - var(--f-3-min)) *
       var(--fluid-bp)
   );
 
-  --f-4-min: 37.32;
-  --f-4-max: 48.83;
+  --f-4-min: 25.63;
+  --f-4-max: 53.67;
   --step-4: calc(
     ((var(--f-4-min) / 16) * 1rem) + (var(--f-4-max) - var(--f-4-min)) *
       var(--fluid-bp)
   );
 
-  --f-5-min: 44.79;
-  --f-5-max: 61.04;
+  --f-5-min: 28.83;
+  --f-5-max: 71.55;
   --step-5: calc(
     ((var(--f-5-min) / 16) * 1rem) + (var(--f-5-max) - var(--f-5-min)) *
       var(--fluid-bp)
@@ -193,7 +203,7 @@ h6,
   position: relative;
   margin-bottom: 2em;
   font-family: var(--font-primary);
-  font-size: var(--step--1);
+  font-size: var(--step-0);
   font-weight: 400;
   line-height: 1.7;
   color: var(--color-text);
@@ -209,6 +219,12 @@ blockquote {
   margin-left: 0;
   padding-left: 2em;
   border-left: 3px solid var(--color-accent-1);
+}
+
+.handwrite {
+  font-family: var(--font-handwrite);
+  font-size: var(--step-3);
+  color: var(--color-accent-1);
 }
 
 

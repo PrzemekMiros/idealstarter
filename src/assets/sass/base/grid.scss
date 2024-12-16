@@ -241,6 +241,9 @@
 .gy-5 {
   --bs-gutter-y: 3rem;
 }
+.text-center {
+  text-align: center;
+}
 @media (min-width: 576px) {
   .col-sm {
     flex: 1 0 0%;
