@@ -29,9 +29,9 @@ function animationMain() {
             let offsetPosition;
 
             if (elementPosition > currentScroll) {
-                offsetPosition = elementPosition - 35; 
+                offsetPosition = elementPosition - -15; 
             } else {
-                offsetPosition = elementPosition - 115; 
+                offsetPosition = elementPosition - 100; 
             }
             scrollToSection(offsetPosition); 
         }

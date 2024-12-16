@@ -40,6 +40,19 @@
   height: auto
 }
 
+.site-logo.light {
+  display: none;
+}
+
+@media (prefers-color-scheme:dark) { 
+  .site-logo.light {
+    display: block;
+  }
+  .site-logo.dark {
+    display: none;
+  }
+}
+
 .desktop-nav ul {
   margin-top: 0;
   margin-bottom: 0
@@ -54,7 +67,7 @@
 .desktop-nav ul li a {
   padding: 1em 2em;
   font-weight: 500;
-  font-size: 90%;
+  font-size: 85%;
   color: var(--color-heading);
   letter-spacing: 1px;
 }
