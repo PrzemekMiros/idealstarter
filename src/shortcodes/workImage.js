@@ -32,6 +32,6 @@ const img = `<img
     width="${stats['jpeg'][0].width}"
     height="${stats['jpeg'][0].height}">`;
 
-return `<div class="image-wrapper blur-load">
+return `<div class="image-wrapper">
     <picture> ${source} ${img} </picture></div>`;
   };

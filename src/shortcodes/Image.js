@@ -12,31 +12,26 @@ module.exports = async function(src, alt) {
     outputDir: './public/assets/img/',
   });
 
-  let lowestSrc = stats['jpeg'][0];
-  let largestSrc = stats['jpeg'][1];
-
   const srcset = Object.keys(stats).reduce(
     (acc, format) => ({
-      ...acc,
-      [format]: stats[format].reduce((_acc, curr) => `${_acc} ${curr.srcset},`, ''),
+        ...acc,
+        [format]: stats[format].map(image => `${image.url} ${image.width}w`).join(', '),
     }),
     {}
   );
 
-  const source = `<source type="image/webp" srcset="${srcset['webp']}">`;
+  const source = `<source type="image/webp" srcset="${srcset['webp']}" sizes="(min-width: 1024px) 1024px, 100vw">`;
 
   const img = `<img
-    decoding="async"
-    loading="lazy"
-    alt="${alt}"
-    src="${lowestSrc.url}"
-    sizes='(min-width: 1024px) 1024px, 100vw'
-    srcset="${srcset['jpeg']}"
-    width="${largestSrc.width}"
-    height="${largestSrc.height}">`;
-
-  return `<div class="image-wrapper blur-load">
-            <img class="placeholder" src="${lowestSrc.url}" alt="Placeholder" width="${largestSrc.width}" height="${largestSrc.height}">
-            <picture>${source} ${img}</picture>
-          </div>`;
-};
+      loading="lazy"
+      decoding="async"
+      alt="${alt}"
+      src="${stats['jpeg'][0].url}"
+      sizes="(min-width: 1024px) 1024px, 100vw"
+      srcset="${srcset['jpeg']}"
+      width="${stats['jpeg'][0].width}"
+      height="${stats['jpeg'][0].height}">`;
+  
+  return `<div class="image-wrapper">
+      <picture> ${source} ${img} </picture></div>`;
+    };
