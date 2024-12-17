@@ -21,12 +21,21 @@
   border-radius: 25px;
 }
 
+.rounded-xl {
+  border-radius: 45px;
+}
+
+.rounded-bottom-xl {
+  border-bottom-right-radius: 45px;
+  border-bottom-left-radius: 45px;
+}
+
 .rounded-full {
   border-radius: 50%;
 }
 
 .bg-squares {
-  background: url(/assets/img/template/bgr-squeres.svg) 0 0/64px;
+  background: var(--color-light-1) url(/assets/img/template/bgr-squeres.svg) 0 0/64px;
 }
 
 .op-5 {

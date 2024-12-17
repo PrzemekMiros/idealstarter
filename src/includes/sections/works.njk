@@ -1,18 +1,19 @@
-<section class="pt-medium pb-small bg-light-2 bg-squares" id="realizacje">
+<section class="bg-dark-1" id="realizacje">
+  <div class="pt-small pb-small rounded-xl bg-light-2">
   <div class="container">
           <div class="col-md-6 mx-auto text-center mb-5">
-            <p class="handwrite my-0">Zobacz</p>
-            <h2 class="h1 mt-0">
+            <p class="handwrite my-0 fade-in">Zobacz</p>
+            <h2 class="h1 mt-0 split-lines">
                 Wybrane realizacje
             </h2>
-            <p>
+            <p class="split-lines">
             Pomogłem zrealizować cele biznesowe wielu firmom, małym i dużym. Dobre opinie to dla mnie najlepsza nagroda
             </p>
         </div>
     <div class="service-wrap w-xl-80 mx-auto">
       {% for post in collections.works.slice(0, 5) %}
       <a href="{{ post.data.link }}" title="{{ post.data.title }}">
-          <div class="rounded-md shadow-2 mb-5 bg-light-1">
+          <div class="rounded-md shadow-2 mb-5 bg-light-1 fade-in">
           <div class="row flex-md-row-reverse align-items-center">
             <div class="col-md-6">
                 <div class="p-2">
@@ -37,5 +38,6 @@
         </a>
       {% endfor %}
     </div>
+  </div>
   </div>
 </section>

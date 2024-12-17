@@ -207,3 +207,7 @@ blockquote {
   font-size: var(--step-3);
   color: var(--color-accent-1);
 }
+
+.line-parent {
+  overflow: hidden;
+}

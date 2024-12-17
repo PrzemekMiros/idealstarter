@@ -1,17 +1,18 @@
-<section class="pt-small pb-medium bg-light-2" id="opinie">
+<section class="bg-dark-1" id="opinie">
+<div class="pt-small pb-medium rounded-xl bg-light-2">
     <div class="container">
         <div class="col-md-6 mx-auto text-center mb-5">
-            <p class="handwrite my-0">Zobacz</p>
-            <h2 class="h1 mt-0">
+            <p class="handwrite my-0 fade-in">Zobacz</p>
+            <h2 class="h1 mt-0 split-lines">
                 Opinie klientów
             </h2>
-            <p>
+            <p class="split-lines">
             Pomogłem zrealizować cele biznesowe wielu firmom, małym i dużym. Dobre opinie to dla mnie najlepsza nagroda
             </p>
         </div>
         <div class="row g-3">
             {% for post in collections.reviews.slice(0, 12)%}
-                <div class="col-md-6 col-xl-4">
+                <div class="col-md-6 col-xl-4 fade-in">
                     <div class="rounded-md shadow-1 p-4 bg-light-1">
                     <div class="review-card d-md-flex flex-column justify-content-between h-100">
                         <div class="opinion-content">
@@ -38,6 +39,7 @@
             {% endfor %}
         </div>
     </div>
+</div>
 </section>
 
 <style>

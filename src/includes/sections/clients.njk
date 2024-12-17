@@ -1,4 +1,5 @@
-<section class="bg-dark-1">
+<section class="clients-bridge-wrap bg-dark-1">
+  <img src="/assets/img/template/img-bridge.svg" class="clients-bridge" alt="">
   <div class="container">
     <div class="row g-3">
       {% for post in collections.clients.slice(0, 6) %}
@@ -11,3 +12,16 @@
     </div>
   </div>
 </section>
+
+<style>
+.clients-bridge-wrap {
+position: relative;
+}
+.clients-bridge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: calc(100% + 1px);
+}
+</style>

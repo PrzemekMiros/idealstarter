@@ -35,7 +35,7 @@
   .container-md,
   .container-sm,
   .container-xl {
-    max-width: 1120px;
+    max-width: 1160px;
   }
 }
 @media (min-width: 1400px) {
@@ -45,7 +45,7 @@
   .container-sm,
   .container-xl,
   .container-xxl {
-    max-width: 1240px;
+    max-width: 1280px;
   }
 }
 .row {
@@ -4655,6 +4655,10 @@ blockquote {
   color: var(--color-accent-1);
 }
 
+.line-parent {
+  overflow: hidden;
+}
+
 html.lenis, html.lenis body {
   height: auto;
 }
@@ -5205,12 +5209,21 @@ html.lenis, html.lenis body {
   border-radius: 25px;
 }
 
+.rounded-xl {
+  border-radius: 45px;
+}
+
+.rounded-bottom-xl {
+  border-bottom-right-radius: 45px;
+  border-bottom-left-radius: 45px;
+}
+
 .rounded-full {
   border-radius: 50%;
 }
 
 .bg-squares {
-  background: url(/assets/img/template/bgr-squeres.svg) 0 0/64px;
+  background: var(--color-light-1) url(/assets/img/template/bgr-squeres.svg) 0 0/64px;
 }
 
 .op-5 {
