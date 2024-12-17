@@ -2,11 +2,11 @@ function animationMain() {
   gsap.registerPlugin(ScrollTrigger);
 
   const lenis = new Lenis({
-  // duration: 1,
+  duration: 1.2,
   easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
   direction: "vertical",
   gestureDirection: "vertical",
-  lerp: 0.18,
+  lerp: 0.2,
   smooth: 5,
   smoothTouch: false,
   touchMultiplier: 2,
@@ -31,7 +31,7 @@ function animationMain() {
             if (elementPosition > currentScroll) {
                 offsetPosition = elementPosition - -10; 
             } else {
-                offsetPosition = elementPosition - 92; 
+                offsetPosition = elementPosition - 125; 
             }
             scrollToSection(offsetPosition); 
         }

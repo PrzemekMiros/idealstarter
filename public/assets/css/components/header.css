@@ -9,21 +9,23 @@
   z-index: 9999;
 }
 
-.site-header::before {
+.site-header-wrap {
+  position: relative;
+  padding: 1em;
+}
+
+.site-header-wrap::before {
   position: absolute;
   content: "";
   left: 0;
   top: 0;
-  width: 100%;
+  right: 0;
   bottom: 0;
+  border-radius: 15px;
   background-color: var(--color-light-1);
   transition: all 0.3s ease-in-out;
-  opacity: 0;
+  opacity: 0.9;
   z-index: -1;
-}
-
-.site-header.scrolled::before {
-  opacity: 0.95;
 }
 
 .site-header.hide {
@@ -158,7 +160,7 @@
 
 .main-menu li a {
   position: relative;
-  font-size: 8.5vw;
+  font-size: 6.5vw;
   color: var(--color-heading);
   text-decoration: none;
   font-family: var(--font-primary);

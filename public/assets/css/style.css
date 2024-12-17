@@ -4724,21 +4724,23 @@ html.lenis, html.lenis body {
   z-index: 9999;
 }
 
-.site-header::before {
+.site-header-wrap {
+  position: relative;
+  padding: 1em;
+}
+
+.site-header-wrap::before {
   position: absolute;
   content: "";
   left: 0;
   top: 0;
-  width: 100%;
+  right: 0;
   bottom: 0;
+  border-radius: 15px;
   background-color: var(--color-light-1);
   transition: all 0.3s ease-in-out;
-  opacity: 0;
+  opacity: 0.9;
   z-index: -1;
-}
-
-.site-header.scrolled::before {
-  opacity: 0.95;
 }
 
 .site-header.hide {
@@ -4873,7 +4875,7 @@ html.lenis, html.lenis body {
 
 .main-menu li a {
   position: relative;
-  font-size: 8.5vw;
+  font-size: 6.5vw;
   color: var(--color-heading);
   text-decoration: none;
   font-family: var(--font-primary);
@@ -5187,30 +5189,33 @@ html.lenis, html.lenis body {
   }
 }
 .shadow-1 {
-  box-shadow: 0 1px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(0, 14, 35, 0.05);
+  box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.05), 0 4px 8px rgba(0, 14, 35, 0.05);
   overflow: hidden;
 }
 
 .shadow-2 {
-  box-shadow: 0 1px rgba(0, 0, 0, 0.05), 0 4px 20px rgba(0, 14, 35, 0.05);
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.05), 0 4px 20px rgba(0, 14, 35, 0.05);
   overflow: hidden;
 }
 
 .shadow-3 {
-  box-shadow: 0 1px rgba(0, 0, 0, 0.05), 0 4px 30px rgba(0, 14, 35, 0.05);
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.05), 0 4px 30px rgba(0, 14, 35, 0.05);
   overflow: hidden;
 }
 
 .rounded-md {
   border-radius: 15px;
+  overflow: hidden;
 }
 
 .rounded-lg {
   border-radius: 25px;
+  overflow: hidden;
 }
 
 .rounded-xl {
   border-radius: 45px;
+  overflow: hidden;
 }
 
 .rounded-bottom-xl {

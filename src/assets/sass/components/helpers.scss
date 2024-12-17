@@ -1,28 +1,31 @@
 
 .shadow-1 {
-    box-shadow: 0 1px rgba(0,0,0,.05),
-                0 4px 10px rgba(0,14,35,.05);
+    box-shadow: 0 -1px 3px rgba(0,0,0,.05),
+                0 4px 8px rgba(0,14,35,.05);
     overflow: hidden;
 }
 .shadow-2 {
-    box-shadow: 0 1px rgba(0,0,0,.05),
+    box-shadow: 0 -1px 5px rgba(0,0,0,.05),
                 0 4px 20px rgba(0,14,35,.05);
     overflow: hidden;
 }
 .shadow-3 {
-    box-shadow: 0 1px rgba(0,0,0,.05),
+    box-shadow: 0 -1px 5px rgba(0,0,0,.05),
                 0 4px 30px rgba(0,14,35,.05);
     overflow: hidden;
 }
 
 .rounded-md {
     border-radius: 15px;
+    overflow: hidden;
 }
 .rounded-lg {
     border-radius: 25px;
+    overflow: hidden;
 }
 .rounded-xl {
     border-radius: 45px;
+    overflow: hidden;
 }
 .rounded-bottom-xl {
     border-bottom-right-radius: 45px;
