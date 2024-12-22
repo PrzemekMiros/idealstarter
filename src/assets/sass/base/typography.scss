@@ -48,16 +48,16 @@
   --font-primary: "Poppins";
   --font-secondary: "Poppins";
   --font-handwrite: "Squarepeg";
-  --fs-sm: clamp(0.9rem, -0.2vi + 0.9rem, 0.8rem);
-  --fs-base: clamp(1rem, 0vi + 1rem, 1rem);
-  --fs-md: clamp(1.1rem, 0.3vi + 1.1rem, 1.3rem);
-  --fs-lg: clamp(1.3rem, 0.8vi + 1.1rem, 1.8rem);
-  --fs-xl: clamp(1.5rem, 1.5vi + 1.1rem, 2.4rem);
-  --fs-xxl: clamp(1.7rem, 2.6vi + 1.1rem, 3.2rem);
-  --fs-xxxl: clamp(2rem, 4vi + 1rem, 4.2rem);
+  --fs-sm: clamp(0.9rem, 0.7vw, 0.8rem);
+  --fs-base: clamp(1rem, 1vw, 1rem);
+  --fs-md: clamp(1.1rem, 1.4vw, 1.3rem);
+  --fs-lg: clamp(1.3rem, 1.9vw, 1.8rem);
+  --fs-xl: clamp(1.5rem, 2.6vw, 2.4rem);
+  --fs-xxl: clamp(1.7rem, 3.7vw, 3.2rem);
+  --fs-xxxl: clamp(2rem, 5vw, 4.2rem);
 }
 
-.xxl,
+.xxl, 
 .xl,
 h1,
 .h1,
