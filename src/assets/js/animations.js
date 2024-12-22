@@ -60,7 +60,7 @@ function animationMain() {
         linesClass: "line-parent",
       });
       gsap.from(mySplitText.lines, {
-        duration: .7,
+        duration: .5,
         delay: .3,
         stagger: 0.05,
         yPercent: 105,
@@ -115,7 +115,7 @@ function animationMain() {
     const anim = gsap.fromTo(fadeElement, {
       autoAlpha: 0, 
       y: 30}, {
-        duration: .7, 
+        duration: .6, 
         delay: .3,
         autoAlpha: 1, 
         ease: "power3",

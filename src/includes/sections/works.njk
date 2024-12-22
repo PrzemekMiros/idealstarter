@@ -2,7 +2,7 @@
   <div class="pt-small pb-small rounded-xl bg-light-2">
   <div class="container">
           <div class="col-md-6 mx-auto text-center mb-5">
-            <p class="handwrite my-0 fade-in">Zobacz</p>
+            <p class="handwrite-md my-0 fade-in">Zobacz</p>
             <h2 class="h1 mt-0 split-lines">
                 Wybrane realizacje
             </h2>
@@ -16,7 +16,7 @@
           <div class="rounded-md shadow-2 mb-5 bg-light-1 fade-in">
           <div class="row flex-md-row-reverse align-items-center">
             <div class="col-md-6">
-                <div class="p-2">
+                <div class="work-image-wrap p-2">
                     {% workImage "src/" + post.data.thumbnail, post.data.title %}
                 </div>
             </div>
@@ -56,3 +56,11 @@
   </div>
   </div>
 </section>
+
+<style>
+.work-image-wrap img {
+  aspect-ratio: 8/6;
+  object-fit: cover;
+  object-position: top;
+}
+</style>

@@ -10,6 +10,7 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     background: var(--color-accent-1);
+    background: linear-gradient(0deg, var(--color-accent-1) 0%, var(--color-accent-2) 100%);
     color: #fff;
     cursor: pointer; 
   }

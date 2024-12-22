@@ -202,9 +202,15 @@ blockquote {
   border-left: 3px solid var(--color-accent-1);
 }
 
-.handwrite {
+.handwrite-md {
   font-family: var(--font-handwrite);
   font-size: var(--step-3);
+  color: var(--color-accent-1);
+}
+
+.handwrite-lg {
+  font-family: var(--font-handwrite);
+  font-size: var(--step-4);
   color: var(--color-accent-1);
 }
 

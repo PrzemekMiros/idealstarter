@@ -1,0 +1,9 @@
+.footer-top {
+  background: url("/assets/img/template/bgr-curved-lines.png");
+  background-size: cover;
+  background-position: bottom;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(153, 153, 153, 0.2);
+}

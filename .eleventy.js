@@ -56,8 +56,14 @@ module.exports = function(eleventyConfig) {
           });
 
         // Collection reviews
-        eleventyConfig.addCollection("reviews", function(collectionApi) {
-          return collectionApi.getFilteredByGlob('src/content/reviews/**/*.md');
+        eleventyConfig.addCollection("reviews", (collection) => {
+
+          const reviews = collection.getFilteredByGlob('src/content/reviews/**/*.md').reverse();
+          return reviews.sort((a, b) => {
+            const orderA = a.data.order || 0; // Ustawiamy domyślną wartość na wypadek braku pola order
+            const orderB = b.data.order || 0;
+            return orderA - orderB;
+          });
           });
 
         // Collection clients

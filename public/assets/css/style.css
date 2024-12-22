@@ -4117,7 +4117,7 @@
 }
 :root, .light {
   --color-accent-1: #b41224;
-  --color-accent-2: #b8280e;
+  --color-accent-2: #d44540;
   --color-dark-1: #000e23;
   --color-dark-2: #131227;
   --color-dark-3: #000e23;
@@ -4659,9 +4659,15 @@ blockquote {
   border-left: 3px solid var(--color-accent-1);
 }
 
-.handwrite {
+.handwrite-md {
   font-family: var(--font-handwrite);
   font-size: var(--step-3);
+  color: var(--color-accent-1);
+}
+
+.handwrite-lg {
+  font-family: var(--font-handwrite);
+  font-size: var(--step-4);
   color: var(--color-accent-1);
 }
 
@@ -4933,6 +4939,7 @@ html.lenis, html.lenis body {
   text-transform: uppercase;
   letter-spacing: 1px;
   background: var(--color-accent-1);
+  background: linear-gradient(0deg, var(--color-accent-1) 0%, var(--color-accent-2) 100%);
   color: #fff;
   cursor: pointer;
 }
@@ -5355,6 +5362,16 @@ html.lenis, html.lenis body {
 
 .bg-gradient::before {
   bottom: -75%;
+}
+
+.footer-top {
+  background: url("/assets/img/template/bgr-curved-lines.png");
+  background-size: cover;
+  background-position: bottom;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(153, 153, 153, 0.2);
 }
 
 /**
