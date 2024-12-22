@@ -29,8 +29,8 @@
 }
 
 .rounded-bottom-xl {
-  border-bottom-right-radius: 45px;
-  border-bottom-left-radius: 45px;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
 }
 
 .rounded-full {
@@ -49,6 +49,10 @@
   .rounded-xl {
     border-radius: 45px;
     overflow: hidden;
+  }
+  .rounded-bottom-xl {
+    border-bottom-right-radius: 45px;
+    border-bottom-left-radius: 45px;
   }
 }
 .bg-squares {

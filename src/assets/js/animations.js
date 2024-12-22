@@ -1,6 +1,6 @@
 function animationMain() {
   gsap.registerPlugin(ScrollTrigger);
-/*
+
   const lenis = new Lenis({
   // duration: .2,
   // easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
@@ -43,7 +43,6 @@ function animationMain() {
   gsap.ticker.add((time)=>{
     lenis.raf(time * 1000)
   });
-*/
   
   if (window.matchMedia("(min-width: 767px)").matches) {
 

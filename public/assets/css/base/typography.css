@@ -37,69 +37,13 @@
   --font-primary: "Poppins";
   --font-secondary: "Poppins";
   --font-handwrite: "Squarepeg";
-  --fluid-min-width: 320;
-  --fluid-max-width: 1280;
-  --fluid-screen: 100vw;
-  --fluid-bp: calc(
-    (var(--fluid-screen) - var(--fluid-min-width) / 16 * 1rem) /
-      (var(--fluid-max-width) - var(--fluid-min-width))
-  );
-}
-
-@media screen and (min-width: 1280px) {
-  :root {
-    --fluid-screen: calc(var(--fluid-max-width) * 1px);
-  }
-}
-:root {
-  --f--2-min: 11.11;
-  --f--2-max: 9.00;
-  --step--2: calc(
-    ((var(--f--2-min) / 16) * 1rem) + (var(--f--2-max) - var(--f--2-min)) *
-      var(--fluid-bp)
-  );
-  --f--1-min: 13.33;
-  --f--1-max: 12.00;
-  --step--1: calc(
-    ((var(--f--1-min) / 16) * 1rem) + (var(--f--1-max) - var(--f--1-min)) *
-      var(--fluid-bp)
-  );
-  --f-0-min: 16.00;
-  --f-0-max: 16.00;
-  --step-0: calc(
-    ((var(--f-0-min) / 16) * 1rem) + (var(--f-0-max) - var(--f-0-min)) *
-      var(--fluid-bp)
-  );
-  --f-1-min: 19.20;
-  --f-1-max: 21.33;
-  --step-1: calc(
-    ((var(--f-1-min) / 16) * 1rem) + (var(--f-1-max) - var(--f-1-min)) *
-      var(--fluid-bp)
-  );
-  --f-2-min: 23.04;
-  --f-2-max: 28.43;
-  --step-2: calc(
-    ((var(--f-2-min) / 16) * 1rem) + (var(--f-2-max) - var(--f-2-min)) *
-      var(--fluid-bp)
-  );
-  --f-3-min: 27.65;
-  --f-3-max: 37.90;
-  --step-3: calc(
-    ((var(--f-3-min) / 16) * 1rem) + (var(--f-3-max) - var(--f-3-min)) *
-      var(--fluid-bp)
-  );
-  --f-4-min: 33.18;
-  --f-4-max: 50.52;
-  --step-4: calc(
-    ((var(--f-4-min) / 16) * 1rem) + (var(--f-4-max) - var(--f-4-min)) *
-      var(--fluid-bp)
-  );
-  --f-5-min: 39.81;
-  --f-5-max: 67.34;
-  --step-5: calc(
-    ((var(--f-5-min) / 16) * 1rem) + (var(--f-5-max) - var(--f-5-min)) *
-      var(--fluid-bp)
-  );
+  --fs-sm: clamp(0.9rem, -0.2vi + 0.9rem, 0.8rem);
+  --fs-base: clamp(1rem, 0vi + 1rem, 1rem);
+  --fs-md: clamp(1.1rem, 0.3vi + 1.1rem, 1.3rem);
+  --fs-lg: clamp(1.3rem, 0.8vi + 1.1rem, 1.8rem);
+  --fs-xl: clamp(1.5rem, 1.5vi + 1.1rem, 2.4rem);
+  --fs-xxl: clamp(1.7rem, 2.6vi + 1.1rem, 3.2rem);
+  --fs-xxxl: clamp(2rem, 4vi + 1rem, 4.2rem);
 }
 
 .xxl,
@@ -128,41 +72,41 @@ h6,
 
 .xxl {
   margin-bottom: 0.5em;
-  font-size: var(--step-5);
+  font-size: var(--fs-xxxl);
   line-height: 1.1;
 }
 
 .xl {
   margin-bottom: 0.5em;
-  font-size: var(--step-4);
+  font-size: var(--fs-xxl);
   line-height: 1.25;
 }
 
 h1,
 .h1 {
   margin-bottom: 0.5em;
-  font-size: var(--step-3);
+  font-size: var(--fs-xl);
   line-height: 1.3;
 }
 
 h2,
 .h2 {
   margin-bottom: 0.8em;
-  font-size: var(--step-2);
+  font-size: var(--fs-lg);
   line-height: 1.3;
 }
 
 h3,
 .h3 {
   margin-bottom: 0.8em;
-  font-size: var(--step-1);
+  font-size: var(--fs-md);
   line-height: 1.4;
 }
 
 h4,
 .h4 {
   margin-bottom: 0.8em;
-  font-size: var(--step-0);
+  font-size: var(--fs-base);
   line-height: 1.4;
 }
 
@@ -184,7 +128,7 @@ h6,
   position: relative;
   margin-bottom: 2em;
   font-family: var(--font-primary);
-  font-size: var(--step-0);
+  font-size: var(--fs-base);
   font-weight: 400;
   line-height: 1.7;
   color: var(--color-text);
@@ -192,7 +136,7 @@ h6,
 
 small,
 .small {
-  font-size: var(--step--2);
+  font-size: var(--fs-sm);
   line-height: 1.4;
 }
 
@@ -204,13 +148,13 @@ blockquote {
 
 .handwrite-md {
   font-family: var(--font-handwrite);
-  font-size: var(--step-3);
+  font-size: var(--fs-xl);
   color: var(--color-accent-1);
 }
 
 .handwrite-lg {
   font-family: var(--font-handwrite);
-  font-size: var(--step-4);
+  font-size: var(--fs-xxl);
   color: var(--color-accent-1);
 }
 

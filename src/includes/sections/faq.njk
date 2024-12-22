@@ -1,12 +1,12 @@
 <section class="bg-dark-3" itemscope itemtype="https://schema.org/FAQPage">
-  <div class="pt-medium pb-medium rounded-xl bg-light-1">
+  <div class="pt-medium pb-small pb-md-medium rounded-xl bg-light-2">
     <div class="container">
         <div class="accordion-wrap w-lg-70 w-xl-60 mx-auto"> 
             <h2 class="h1 mt-0 mb-5 split-lines">
                 Najczęściej zadawane pytania
             </h2>
             {% for post in collections.faq %}
-            <div class="bg-light-1 rounded-md shadow-1 p-4 my-3 fade-in" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <div class="bg-light-1 rounded-md shadow-1 p-2 px-4 p-md-4 my-3 fade-in" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
               <button class="accordion my-3">
                 <span class="h3 title my-0" itemprop="name">
                   {{ post.data.title }}

@@ -23,7 +23,9 @@
   bottom: 0;
   border-radius: 15px;
   background-color: var(--color-light-1);
+ box-shadow: 0 5px 15px #1111;
   transition: all .3s ease-in-out;
+  pointer-events: none;
   opacity: .9;
   z-index: -1
 }
@@ -72,6 +74,10 @@
   font-size: 85%;
   color: var(--color-heading);
   letter-spacing: 1px;
+}
+
+.desktop-nav ul li a.link-active {
+  color: var(--color-accent-1)
 }
 
 .menu-toggle {
@@ -126,11 +132,13 @@
   .menu-bg {
     display: flex;
     position: fixed;
-    left: 0;
-    top: 0;
-    height: 120%;
-    width: 100%;
+    left: 16px;
+    right: 16px;
+    top: 19px;
+    bottom: 16px;
     background: var(--color-light-1);
+    box-shadow: 0 0 10px #1111;
+    border-radius: 15px;
     z-index: 99
   }
   
@@ -181,12 +189,3 @@
     color: var(--color-accent-1);
     opacity: .8
   }
-
-@media(min-width:767px) {
-  .site-header {
-    left: 4px; 
-    top: 0;
-    width: calc(100% - 4px)
-  }   
-
-}

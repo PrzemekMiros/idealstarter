@@ -1,7 +1,7 @@
 <section class="bg-dark-3">
     <div class="container p-relative" style="background:url(/assets/img/template/bgr-globe.svg); background-size:cover; background-position:center">
         <div class="pt-xxlarge pb-xxlarge text-center">
-            <p class="handwrite-lg fade-in my-3 color-light-3">
+            <p class="handwrite-lg fade-in mt-5 mb-4 my-md-3 color-light-3">
                     Narzędzia których używam
                 </p>
         </div>
@@ -123,18 +123,98 @@
 
 <style>
 .tool-item {
-  position: absolute;
+  position:absolute;
+  top:11%;
+  left:13%;
+  right:auto;
+  padding:4px 12px;
+  width:fit-content;
+  border-radius:13px;
+  border:1px solid #0f2c58;
+  background:#000e23;
+  color:#fff;
+  font-size:var(--fs-sm);
+  transition:1s
+}
+.tool-item img {
+  width:16px;
+  height:16px
+}
+.tool-item:nth-child(1) {
+  top:14%;
+  left:15%;
+  right:auto
+}
+.tool-item:nth-child(2) {
+  top:29%;
+  left:4%;
+  right:auto
+}
+.tool-item:nth-child(3) {
+  top:20%;
+  left:28%;
+  right:auto
+}
+.tool-item:nth-child(4) {
+  top:38%;
+  left:18%;
+  right:auto
+}
+.tool-item:nth-child(5) {
+  top:60%;
+  left:10%;
+  right:auto
+}
+.tool-item:nth-child(6) {
+  top:72%;
+  left:22%;
+  right:auto
+}
+.tool-item:nth-child(7) {
+  top:83%;
+  left:15%;
+  right:auto
+}
+.tool-item:nth-child(8) {
+  top:11%;
+  left:auto;
+  right:17%
+}
+.tool-item:nth-child(9) {
+  top:20%;
+  left:auto;
+  right:7%
+}
+.tool-item:nth-child(10) {
+  top:29%;
+  left:auto;
+  right:26%
+}
+.tool-item:nth-child(11) {
+  top:38%;
+  left:auto;
+  right:10%
+}
+.tool-item:nth-child(12) {
+  top:60%;
+  left:auto;
+  right:20%
+}
+.tool-item:nth-child(13) {
+  top:72%;
+  left:auto;
+  right:11%
+}
+.tool-item:nth-child(14) {
+  top:83%;
+  left:auto;
+  right:25%
+}
+@media(min-width:767px) {
+.tool-item {
   top: 14%;
   left: 15%;
-  right: auto;
-  padding: 4px 12px;
-  width: fit-content;
-  border-radius: 13px;
-  border: 1px solid #0f2c58;
-  background: #000e23;
-  color: #fff;
-  font-size: 1em;
-  transition: 1s;
+  font-size: var(--fs-base);
 }
   .tool-item img {
     width: 16px;
@@ -209,6 +289,7 @@
   top: 80%;
   left: auto;
   right: 9%;
+}
 }
 
 </style>
