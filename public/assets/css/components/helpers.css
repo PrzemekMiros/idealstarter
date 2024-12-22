@@ -14,17 +14,17 @@
 }
 
 .rounded-md {
-  border-radius: 15px;
+  border-radius: 13px;
   overflow: hidden;
 }
 
 .rounded-lg {
-  border-radius: 25px;
+  border-radius: 18px;
   overflow: hidden;
 }
 
 .rounded-xl {
-  border-radius: 45px;
+  border-radius: 25px;
   overflow: hidden;
 }
 
@@ -37,6 +37,20 @@
   border-radius: 50%;
 }
 
+@media (min-width: 767px) {
+  .rounded-md {
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  .rounded-lg {
+    border-radius: 25px;
+    overflow: hidden;
+  }
+  .rounded-xl {
+    border-radius: 45px;
+    overflow: hidden;
+  }
+}
 .bg-squares {
   background: var(--color-light-1) url(/assets/img/template/bgr-squeres.svg) 0 0/64px;
 }

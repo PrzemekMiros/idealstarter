@@ -1,6 +1,6 @@
 <section class="clients-bridge-wrap bg-dark-3">
 
-<svg class="clients-bridge" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg class="clients-bridge d-none d-md-block" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 294.6 124.7" style="enable-background:new 0 0 294.6 124.7;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:url(#SVGID_1_);}
@@ -27,35 +27,73 @@
 		<stop  offset="0.49" style="stop-color:#FFFFFF"/>
 		<stop  offset="1" style="stop-color:#F7F7F8"/>
 	</linearGradient>
-	<path style="fill:var(--color-light-1);" d="M37,0h221l-25.4,0.1
+	<path style="fill:url(#SVGID_00000141432792684532214550000001673671323982001816_);" d="M37,0h221l-25.4,0.1
 		c-33.9,0.1-61.4,27.5-61.4,61.1c0,34.5,28.1,62.5,62.9,62.7L258,124H37l21.9-0.1c34.8-0.2,62.9-28.2,62.9-62.7
 		c0-33.7-27.4-61-61.4-61.1L37,0z"/>
 </g>
 </svg>
 
-  <div class="container">
-    <div class="row g-3">
-      {% for post in collections.clients.slice(0, 6) %}
-      <div class="col-2 col-md-2 mt-0">
-        <div class="client-card p-md-4">
-          <img src="{{ post.data.logo }}" loading="lazy" decoding="async" width="175" height="74" alt="{{ post.data.title }} - Logo" />
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
+
+	<div class="logo-container">
+		<div class="logos">
+			{% for post in collections
+				.clients
+				.slice(0, 9) %}
+				<div class="py-4 px-3">
+					<img src="{{ post.data.logo }}" loading="lazy" decoding="async" height="55" width="130" alt="{{ post.data.title }} - logo"/>
+				</div>
+			{% endfor %}
+
+			<!-- Repeat the logos for smooth scrolling -->
+			{% for post in collections
+				.clients
+				.slice(0, 9) %}
+				<div class="py-4 px-2">
+					<img src="{{ post.data.logo }}" loading="lazy" decoding="async" height="55" width="130" alt="{{ post.data.title }} - logo"/>
+				</div>
+			{% endfor %}
+
+		</div>
+	</div>
+
 </section>
 
 <style>
-.clients-bridge-wrap {
-position: relative;
+	.clients-bridge-wrap {
+		position: relative;
+		overflow: hidden;
+		z-index: 9
+	}
+	.clients-bridge {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: calc(100% + 1px);
+	}
+	.logo-container {
+	position: relative;
+  align-items:center;
+  width:100%;
+  display:flex;
+  z-index: -1
 }
-.clients-bridge {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: calc(100% + 1px);
+.logos {
+  width:100%;
+  animation:60s linear infinite scroll-logo;
+  display:flex
+}
+.logos img {
+  width:135px;
+  opacity: .8
+}
+@keyframes scroll-logo {
+  0% {
+    transform:translate(0)
+  }
+  to {
+    transform:translate(-100%)
+  }
 }
 </style>

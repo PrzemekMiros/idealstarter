@@ -1,9 +1,9 @@
 :root, .light {
   --color-accent-1: #b41224;
   --color-accent-2: #b8280e;
-  --color-dark-1: #080714;
+  --color-dark-1: #000e23;
   --color-dark-2: #131227;
-  --color-dark-3: #080714;
+  --color-dark-3: #000e23;
   --color-light-1: #fdfdfd;
   --color-light-2: #f7f7f7;
   --color-light-3: #ffffff;
@@ -16,7 +16,7 @@
   :root {
     --color-dark-1: #fdfdfd;
     --color-dark-2: #f7f7f7;
-    --color-dark-3: #0c0c1d;
+    --color-dark-3: #000e23;
     --color-light-1: #080714;
     --color-light-2: #0d0d19;
     --color-light-3: #ffffff;
