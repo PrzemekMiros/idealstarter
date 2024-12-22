@@ -60,11 +60,11 @@ function animationMain() {
         linesClass: "line-parent",
       });
       gsap.from(mySplitText.lines, {
-        duration: .6,
+        duration: .7,
         delay: .3,
         stagger: 0.05,
         yPercent: 105,
-        ease: "power2",
+        ease: "power3",
         scrollTrigger: {
           trigger: element,
           start: "top 95%",
@@ -115,10 +115,10 @@ function animationMain() {
     const anim = gsap.fromTo(fadeElement, {
       autoAlpha: 0, 
       y: 30}, {
-        duration: .6, 
+        duration: .7, 
         delay: .3,
         autoAlpha: 1, 
-        ease: "power2",
+        ease: "power3",
         y: 0
       });
     ScrollTrigger.create({
