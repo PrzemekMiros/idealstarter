@@ -3,9 +3,10 @@
   --color-accent-2: #b8280e;
   --color-dark-1: #080714;
   --color-dark-2: #131227;
+  --color-dark-3: #080714;
   --color-light-1: #fdfdfd;
   --color-light-2: #f7f7f7;
-  --color-light-3: #abb3ba;
+  --color-light-3: #ffffff;
   --color-heading: #0e1d34;
   --color-text: #47586b;
   --color-border: #74787b87;
@@ -15,9 +16,10 @@
   :root {
     --color-dark-1: #fdfdfd;
     --color-dark-2: #f7f7f7;
+    --color-dark-3: #0c0c1d;
     --color-light-1: #080714;
-    --color-light-2: #131227;
-    --color-light-3: #131227;
+    --color-light-2: #0d0d19;
+    --color-light-3: #ffffff;
     --color-heading: #fff;
     --color-text: #bcbcbc;
     --color-border: #74787b87;
@@ -45,6 +47,10 @@
 
 .bg-dark-2 {
   background-color: var(--color-dark-2);
+}
+
+.bg-dark-3 {
+  background-color: var(--color-dark-3);
 }
 
 .bg-accent-1 {
