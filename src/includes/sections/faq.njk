@@ -6,7 +6,7 @@
                 Najczęściej zadawane pytania
             </h2>
             {% for post in collections.faq %}
-            <div class="bg-light-1 rounded-md shadow-1 p-2 px-4 p-md-4 my-3 fade-in" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <div class="bg-light-1 rounded-md shadow-1 p-2 px-4 p-md-3 px-md-4 my-3 fade-in" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
               <button class="accordion my-3">
                 <span class="h3 title my-0" itemprop="name">
                   {{ post.data.title }}

@@ -1,5 +1,5 @@
-<section class="bg-dark-3">
-    <div class="container p-relative" style="background:url(/assets/img/template/bgr-globe.svg); background-size:cover; background-position:center">
+<section class="tools bg-dark-3">
+    <div class="container p-relative">
         <div class="pt-xxlarge pb-xxlarge text-center">
             <p class="handwrite-lg fade-in mt-5 mb-4 my-md-3 color-light-3">
                     Narzędzia których używam
@@ -130,8 +130,8 @@
   padding:4px 12px;
   width:fit-content;
   border-radius:13px;
-  border:1px solid #0f2c58;
-  background:#000e23;
+  border: 1px solid #20385b;
+  background: #15253d;
   color:#fff;
   font-size:var(--fs-sm);
   transition:1s
@@ -211,14 +211,19 @@
   right:25%
 }
 @media(min-width:767px) {
+.tools .container {
+ background: url("/assets/img/template/bgr-globe.svg"); 
+ background-size: cover; 
+ background-position: center
+}
 .tool-item {
   top: 14%;
   left: 15%;
   font-size: var(--fs-base);
 }
   .tool-item img {
-    width: 16px;
-    height: 16px
+    width: 21px;
+    height: 21px
   }
  .tool-item:nth-child(1) {
   top: 14%;

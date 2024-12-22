@@ -1,13 +1,13 @@
 function animationMain() {
   gsap.registerPlugin(ScrollTrigger);
-
+/*
   const lenis = new Lenis({
-  // duration: .2,
   // easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
   direction: "vertical",
   gestureDirection: "vertical",
-  lerp: 0.15,
-  smooth: true,
+  duration: 5,
+  lerp: 0.2,
+  smooth: 5,
   smoothTouch: false,
   touchMultiplier: 2,
   wheelMultiplier: 1,
@@ -43,7 +43,8 @@ function animationMain() {
   gsap.ticker.add((time)=>{
     lenis.raf(time * 1000)
   });
-  
+*/
+
   if (window.matchMedia("(min-width: 767px)").matches) {
 
   // Paragraph --------------------------------------------------------------
