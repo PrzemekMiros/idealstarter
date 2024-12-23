@@ -4495,13 +4495,15 @@ html.is-rendering .transition-fade {
   --font-primary: "Poppins";
   --font-secondary: "Poppins";
   --font-handwrite: "Squarepeg";
-  --fs-sm: clamp(13.9px, 0.8vw, 12.8px);
+  /*
+  --fs-sm: clamp(12.8px, 0.8vw, 13.8px);
   --fs-base: clamp(16px, 1.1vw, 17px);
   --fs-md: clamp(18.4px, 1.5vw, 22.7px);
   --fs-lg: clamp(21.2px, 2.1vw, 30.2px);
   --fs-xl: clamp(24.3px, 2.9vw, 40.3px);
   --fs-xxl: clamp(28px, 3.9vw, 53.7px);
   --fs-xxxl: clamp(32.2px, 5.4vw, 71.5px);
+  */
 }
 
 .xxl,
@@ -4583,7 +4585,6 @@ h6,
 }
 
 .paragraph, p, li {
-  position: relative;
   margin-bottom: 2em;
   font-family: var(--font-primary);
   font-size: var(--fs-base);
