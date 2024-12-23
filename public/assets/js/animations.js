@@ -1,11 +1,11 @@
 function animationMain() {
   gsap.registerPlugin(ScrollTrigger);
-/*
+
   const lenis = new Lenis({
   // easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
   direction: "vertical",
   gestureDirection: "vertical",
-  duration: 5,
+  duration: 1,
   lerp: 0.2,
   smooth: 5,
   smoothTouch: false,
@@ -43,7 +43,7 @@ function animationMain() {
   gsap.ticker.add((time)=>{
     lenis.raf(time * 1000)
   });
-*/
+
 
   if (window.matchMedia("(min-width: 767px)").matches) {
 
@@ -250,23 +250,18 @@ function animationMain() {
              ease: 'Expo.easeInOut',
          });
          tl.from('.menu-bg', {
-             duration: .8,
+             duration: .6,
              opacity: 0,
              ease: 'Expo.easeInOut'
          });
          tl.from('.main-menu li a', {
-             duration: 1.3,
+             duration: .8,
              y:"110%",
-             stagger: 0.1,
+             stagger: 0.05,
              ease: 'Expo.easeInOut'
-         }, "-=0.8");
-         tl.from('.line-xh', {
-          duration: 1,
-          stagger: .1,
-          width: "0",
-          ease: 'Expo.easeInOut'
-         }, "-=1.3");
+         }, "-=0.6");
          tl.reverse();
+         
          menuToggle.addEventListener('click', function(){
              menuBar.reversed(!menuBar.reversed());
              tl.reversed(!tl.reversed());
@@ -276,6 +271,7 @@ function animationMain() {
           link.addEventListener('click', function () {
               menuBar.reversed(!menuBar.reversed());
               tl.reversed(!tl.reversed());
+              document.querySelector("body").classList.remove("menu-open");
           });
       });
   // End animation
