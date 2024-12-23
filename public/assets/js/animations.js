@@ -260,6 +260,12 @@ function animationMain() {
              stagger: 0.05,
              ease: 'Expo.easeInOut'
          }, "-=0.6");
+         tl.from('.line-xh', {
+          duration: .8,
+          stagger: .1,
+          width: "0",
+          ease: 'Expo.easeInOut'
+         }, "-=0.5");
          tl.reverse();
          
          menuToggle.addEventListener('click', function(){

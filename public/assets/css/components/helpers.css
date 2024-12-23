@@ -78,6 +78,13 @@
   opacity: 0.13;
 }
 
+.line-xh {
+  width: 100%;
+  height: 1px;
+  background: var(--color-dark-1);
+  opacity: 0.13;
+}
+
 @media (min-width: 767px) {
   .bg-gradient {
     position: relative;
