@@ -6,11 +6,11 @@ function animationMain() {
   direction: "vertical",
   gestureDirection: "vertical",
   duration: 1,
-  lerp: 0.15,
+  lerp: 0.2,
   smooth: 5,
   smoothTouch: false,
   touchMultiplier: 2,
-  wheelMultiplier: 1,
+  wheelMultiplier: .7,
   infinite: false,
   autoResize: true
   });
