@@ -2,11 +2,11 @@ function animationMain() {
   gsap.registerPlugin(ScrollTrigger);
 
   const lenis = new Lenis({
-  // easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+  asing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
   direction: "vertical",
   gestureDirection: "vertical",
   duration: 1,
-  lerp: 0.2,
+  lerp: 0.15,
   smooth: 5,
   smoothTouch: false,
   touchMultiplier: 2,
