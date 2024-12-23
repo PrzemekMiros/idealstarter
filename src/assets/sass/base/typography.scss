@@ -48,13 +48,13 @@
   --font-primary: "Poppins";
   --font-secondary: "Poppins";
   --font-handwrite: "Squarepeg";
-  --fs-sm: clamp(13.9px, -0.1vi + 14.4px, 12.8px);
-  --fs-base: clamp(16px, 0.1vi + 15.5px, 17px);
-  --fs-md: clamp(18.4px, 0.5vi + 16.5px, 22.7px);
-  --fs-lg: clamp(21.2px, 1vi + 17px, 30.2px);
-  --fs-xl: clamp(24.3px, 1.8vi + 17.1px, 40.3px);
-  --fs-xxl: clamp(28px, 2.9vi + 16.3px, 53.7px);
-  --fs-xxxl: clamp(32.2px, 4.5vi + 14.3px, 71.5px);
+  --fs-sm: clamp(13.9px, 0.8vw, 12.8px);
+  --fs-base: clamp(16px, 1.1vw, 17px);
+  --fs-md: clamp(18.4px, 1.5vw, 22.7px);
+  --fs-lg: clamp(21.2px, 2.1vw, 30.2px);
+  --fs-xl: clamp(24.3px, 2.9vw, 40.3px);
+  --fs-xxl: clamp(28px, 3.9vw, 53.7px);
+  --fs-xxxl: clamp(32.2px, 5.4vw, 71.5px);
 }
 
 .xxl, 
