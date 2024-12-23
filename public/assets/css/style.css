@@ -5337,6 +5337,12 @@ html.lenis, html.lenis body {
   border-top: 1px solid rgba(153, 153, 153, 0.2);
 }
 
+.work-image-wrap img {
+  aspect-ratio: 8/6;
+  object-fit: cover;
+  object-position: top;
+}
+
 /**
  * Coldark Theme for Prism.js
  * Theme variation: Dark

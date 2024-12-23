@@ -1,8 +1,100 @@
 ---
 layout: "layouts/base-hero.njk"
+uptitle: Kilka słów
 title: O mnie
-description: Tworzę strony internetowe które pozyskują klientów. Dbam o użyteczność, atrakcyjną formę i szybkość ładowania, żeby jak najlepiej zrealizować cel biznesowy.
+description: Jeżeli szukasz rzetelnego freelancera, który lubi łamać schematy i wykonuje zlecone usługi na wysokim poziomie dbając o każdy detal to ta oferta jest właśnie dla Ciebie.
 ---
 
-<section class="pt-xlarge pb-xlarge"></section>
-<section class="pt-xlarge pb-xlarge"></section>
+{% include "sections/values.njk" %}
+
+<section class="pt-medium pb-medium p-relative bg-light-1">
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col m-0">
+        <h2 class="mt-4 w-100" itemprop="name">Czym się zajmuje</h2>
+      </div>
+      <div class="col"> 
+        <p class="w-100" itemprop="description">
+          Pomogłem zrealizować cele biznesowe kilkudziesięciu firmom. Zawsze jestem dostępny, aby pomóc, wprowadzić aktualizacje lub rozwiązać problemy. Oferuję konkurencyjne ceny bez kompromisów co do jakości.
+        </p>
+        <p class="w-100 mb-1" itemprop="description">
+         Rozmawiam, planuje, szkicuje, tropie nowinki techniczne, depcze po piętach  najnowszym trendom. Dbam o aspekty wizualne i techniczne, nie używam kreatorów witryn typuElementor.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pt-medium pb-medium bg-light-2">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <img loading="lazy" class="w-100 p-0 rounded-10" src="/assets/img/bwl.jpg" alt="Wywiad dla magazynu" itemprop="image">
+      </div>
+      <div class="col-12 col-md-6">
+        <span class="accent-text mb-0">Poznajmy się</span>
+        <h2 class="py-2 fs-1" itemprop="name"><span id="greeting"></span> 🖖</h2>
+        <p class="pb-2" itemprop="description">
+          Nazywam się Przemek Miros. Od 8 lat tworzę strony i sklepy internetowe,
+           stale doskonaląc swoje umiejętności na licznych kursach i w realnych projektach. Niezależnie od tego, czy tworzę stronę internetową, sklep czy system usprawniający procesy w firmie zawsze staram się osiągnąć ustalone cele.
+        </p>
+        <p class="mb-0" itemprop="description">
+         Moja "filozofia" tworzenia stron opiera się zapewnieniu jak najlepszych wrażeń użytkownikowi. Zawsze staram się tworzyć <b>intuicyjne i atrakcyjne wizaulnie</b> dla użytkowników końcowych. Wierzę, że świetny projekt wykracza poza estetykę – chodzi o <b>rozwiązywanie problemów</b>, <b>wywoływanie emocji</b> i wywieranie <b>znaczącego wpływu</b>.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pt-medium pb-medium">
+  <div class="container">
+    <div class="row row-cols-1 row-cols-lg-4 g-4 pb-4">
+      <h2 class="text-center w-100 mb-2">W liczbach</h2>
+      <p class=" mb-5 display-8 text-center w-100 mt-0">To co do tej pory zrobiłem przedstawione w liczbach</p>
+
+      <div class="col animated">
+        <div class="card h-100 p-4">
+          <h3 class="h1 text-dark mb-4">
+            <span class="display-5 fw-bold">8<span class="accent-text mb-0 blue fw-bold"> +</span></span>
+          </h3>
+          <p class="">Lat doświadczenia</p>
+        </div>
+      </div>
+
+      <div class="col animated">
+        <div class="card h-100 p-4">
+          <h3 class="h1 text-dark mb-4">
+            <span class="display-5 fw-bold">70<span class="accent-text mb-0 blue fw-bold"> +</span></span>
+          </h3>
+          <p class=" display-8">Skończonych projektów</p>
+        </div>
+      </div>
+
+      <div class="col animated">
+        <div class="card h-100 p-4">
+          <h3 class="h1 text-dark mb-4">
+            <span class="display-5 fw-bold">40<span class="accent-text mb-0 blue fw-bold"> +</span></span>
+          </h3>
+          <p class=" display-8">Zadowolonych klientów</p>
+        </div>
+      </div>
+
+      <div class="col d-flex">
+        <a href="/#opinie" class="col bg-primary d-flex align-items-center justify-content-between text-white p-3 text-decoration-none rounded-20">
+          <h3 class="h4 color-light m-0">Przeczytaj opinie klientów</h3>
+          <svg class="ms-1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 18" style="width:28px;" xml:space="preserve">
+            <style type="text/css">
+              .st0{fill:#CFE2FF;}.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#448FFE;}
+            </style>
+            <g>
+              <path class="st0" d="M5,0h6c2.8,0,5,2.2,5,5v6c0,2.8-2.2,5-5,5H5c-2.8,0-5-2.2-5-5V5C0,2.2,2.2,0,5,0z"/>
+              <path class="st1" d="M8.6,4.5c0.4-0.4,1-0.4,1.4,0l2.8,2.8c0.4,0.4,0.4,1,0,1.4L10,11.5c-0.4,0.4-1,0.4-1.4,0
+              c-0.4-0.4-0.4-1,0-1.4L9.7,9H3.9c-0.6,0-1-0.4-1-1c0-0.6,0.4-1,1-1h5.8L8.6,5.9C8.2,5.5,8.2,4.9,8.6,4.5z"/>
+            </g>
+          </svg>
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</section>

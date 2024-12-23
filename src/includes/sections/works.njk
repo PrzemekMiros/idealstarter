@@ -12,7 +12,7 @@
         </div>
     <div class="w-xl-80 mx-auto">
       {% for post in collections.works.slice(0, 3) %}
-      <a href="{{ post.data.link }}" title="{{ post.data.title }}">
+      <a href="{{ post.data.link }}" title="{{ post.data.title }}" target="_blank">
           <div class="rounded-md shadow-2 mb-5 bg-light-1 fade-in">
           <div class="row flex-md-row-reverse align-items-center">
             <div class="col-md-6">
@@ -56,11 +56,3 @@
   </div>
   </div>
 </section>
-
-<style>
-.work-image-wrap img {
-  aspect-ratio: 8/6;
-  object-fit: cover;
-  object-position: top;
-}
-</style>
