@@ -7,7 +7,7 @@
   {
     "id": 1735849905265,
     "text": "Kolejne zadanie 2",
-    "done": true
+    "done": false
   },
   {
     "id": 1735850116105,
@@ -20,13 +20,18 @@
     "done": true
   },
   {
-    "id": 1735850981978,
-    "text": "ryjh",
+    "id": 1735852597398,
+    "text": "Nowe zadanie",
+    "done": false
+  },
+  {
+    "id": 1735852774100,
+    "text": "Nowe zadanie 3",
     "done": true
   },
   {
-    "id": 1735851593303,
-    "text": "rtjrtjrtj",
-    "done": true
+    "id": 1735852881163,
+    "text": "Nowe zadanie 5",
+    "done": false
   }
 ]

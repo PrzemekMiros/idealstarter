@@ -4,39 +4,69 @@ title: Zadania
 robots: noindex
 ---
 
-<section>
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
+<section class="pb-large">
 <div class="container">
-  <h1>Lista Zadań</h1>
+
   <div x-data="taskApp">
     <!-- Formularz dodawania zadania -->
+    <div class="task-form p-4 bg-light-2 text-center mb-4 rounded-md">
     <input x-model="newTask" type="text" placeholder="Nowe zadanie">
     <button @click="addTask()">Dodaj Zadanie</button>
+    </div>
 
-
-
-    <!-- Lista zadań -->
+    <div class="row">
+    
+    <div class="col-md-6">
+    <div class="p-4 bg-light-2 rounded-md">
     <h2>Do zrobienia</h2>
-    <ul>
+    <ul class="task-list">
       <template x-for="task in tasks.filter(t => !t.done)" :key="task.id">
-        <li>
+        <li class="p-4 bg-light-1">
           <span x-text="task.text"></span>
           <button @click="markAsDone(task.id)">Zrobione</button>
         </li>
       </template>
     </ul>
+    </div>
+    </div>
 
+    <div class="col-md-6">
+    <div class="p-4 bg-light-2 rounded-md">
     <h2>Zrobione</h2>
-    <ul>
+    <ul class="task-list">
       <template x-for="task in tasks.filter(t => t.done)" :key="task.id">
-        <li>
+        <li class="p-4 bg-light-1">
           <span x-text="task.text"></span>
         </li>
       </template>
     </ul>
+    </div>
+    </div>
+
+    </div>
+
   </div>
 </div>
 </section>
 
+<style>
+.task-form input,
+.task-form button {
+   padding: 1em
+}
+.task-form input {
+   width: 50%
+}
+.task-list {
+   padding-left: 0
+}
+.task-list li {
+   margin-bottom: .8em;
+   list-style: none
+}
+</style>
 
 <script>
 document.addEventListener('alpine:init', () => {
@@ -45,12 +75,12 @@ document.addEventListener('alpine:init', () => {
     newTask: '',
     
     async fetchTasks() {
-      const response = await fetch('/tasks.json');
+      const response = await fetch('http://localhost:3000/tasks.json');
       this.tasks = await response.json();
     },
     
     async saveTasks() {
-      await fetch('/save-tasks', {
+      await fetch('http://localhost:3000/save-tasks', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(this.tasks)

@@ -1,48 +1,60 @@
 function animationMain() {
   gsap.registerPlugin(ScrollTrigger);
 
-  const lenis = new Lenis({
-  asing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+// Inicjalizacja Lenis
+const lenis = new Lenis({
+  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
   direction: "vertical",
   gestureDirection: "vertical",
   duration: 1,
-  lerp: 0.2,
-  smooth: 5,
+  lerp: 0.1,
+  smooth: true,
   smoothTouch: false,
   touchMultiplier: 2,
-  wheelMultiplier: .7,
+  wheelMultiplier: 0.7,
   infinite: false,
   autoResize: true
-  });
-  function scrollToSection(targetPosition) {
-        lenis.scrollTo(targetPosition);
-  }
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener("click", function(e) {
-        e.preventDefault();
-        const targetId = this.getAttribute("href").substring(1);
-        const targetElement = document.getElementById(targetId);
-
-        if (targetElement) {
-            const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY; // Oblicz pozycję elementu
-            const currentScroll = window.scrollY; 
-            let offsetPosition;
-
-            if (elementPosition > currentScroll) {
-                offsetPosition = elementPosition - -10; 
-            } else {
-                offsetPosition = elementPosition - 125; 
-            }
-            scrollToSection(offsetPosition); 
-        }
-    });
 });
 
-  lenis.on('scroll', ScrollTrigger.update)
-  
-  gsap.ticker.add((time)=>{
-    lenis.raf(time * 1000)
+// Funkcja przewijania do sekcji
+function scrollToSection(targetPosition) {
+  lenis.scrollTo(targetPosition);
+}
+
+// Obsługa linków kotwicowych
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+    const targetId = this.getAttribute("href").substring(1);
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+      const currentScroll = window.scrollY;
+      let offsetPosition;
+
+      if (elementPosition > currentScroll) {
+        offsetPosition = elementPosition - 10; 
+      } else {
+        offsetPosition = elementPosition - 125; 
+      }
+      scrollToSection(offsetPosition);
+    }
   });
+});
+
+// Zapobiegaj przewijaniu przy ładowaniu strony
+window.addEventListener("load", () => {
+  window.scrollTo(0, 0); // Ustaw przewijanie na samą górę
+  lenis.scrollTo(0, { immediate: true }); // Ustaw natychmiast Lenis na górę
+});
+
+// Synchronizacja Lenis i ScrollTrigger
+lenis.on('scroll', ScrollTrigger.update);
+
+gsap.ticker.add((time) => {
+  lenis.raf(time * 1000);
+});
 
 
   if (window.matchMedia("(min-width: 767px)").matches) {
