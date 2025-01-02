@@ -1,0 +1,82 @@
+---
+layout: "layouts/base-hero.njk"
+title: Zadania
+robots: noindex
+---
+
+<section>
+<div class="container">
+  <h1>Lista Zadań</h1>
+  <div x-data="taskApp">
+    <!-- Formularz dodawania zadania -->
+    <input x-model="newTask" type="text" placeholder="Nowe zadanie">
+    <button @click="addTask()">Dodaj Zadanie</button>
+
+    <!-- Lista zadań -->
+    <h2>Do zrobienia</h2>
+    <ul>
+      <template x-for="task in tasks.filter(t => !t.done)" :key="task.id">
+        <li>
+          <span x-text="task.text"></span>
+          <button @click="markAsDone(task.id)">Zrobione</button>
+        </li>
+      </template>
+    </ul>
+
+    <h2>Zrobione</h2>
+    <ul>
+      <template x-for="task in tasks.filter(t => t.done)" :key="task.id">
+        <li>
+          <span x-text="task.text"></span>
+        </li>
+      </template>
+    </ul>
+  </div>
+</div>
+</section>
+
+
+<script>
+document.addEventListener('alpine:init', () => {
+  Alpine.data('taskApp', () => ({
+    tasks: [],
+    newTask: '',
+    
+    async fetchTasks() {
+      const response = await fetch('http://localhost:3000/tasks.json');
+      this.tasks = await response.json();
+    },
+    
+    async saveTasks() {
+      await fetch('http://localhost:3000/save-tasks', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(this.tasks)
+      });
+    },
+    
+    addTask() {
+      if (this.newTask.trim() === '') return;
+      this.tasks.push({
+        id: Date.now(),
+        text: this.newTask,
+        done: false
+      });
+      this.newTask = '';
+      this.saveTasks();
+    },
+    
+    markAsDone(taskId) {
+      const task = this.tasks.find(t => t.id === taskId);
+      if (task) task.done = true;
+      this.saveTasks();
+    },
+    
+    init() {
+      this.fetchTasks();
+    }
+  }));
+});
+
+
+</script>

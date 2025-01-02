@@ -24,6 +24,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/content/reviews/img"); 
     eleventyConfig.addPassthroughCopy("src/static");
     eleventyConfig.addPassthroughCopy("src/admin");
+    eleventyConfig.addPassthroughCopy("tasks.json");
     eleventyConfig.addWatchTarget("src/assets/sass");
 
     eleventyConfig.addShortcode("bannerStatic", banner);

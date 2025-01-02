@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "text": "Zadanie 1",
+    "done": true
+  },
+  {
+    "id": 2,
+    "text": "Zadanie 2",
+    "done": true
+  },
+  {
+    "id": 1735849887217,
+    "text": "Kolejne zadanie",
+    "done": false
+  },
+  {
+    "id": 1735849905265,
+    "text": "Kolejne zadanie 2",
+    "done": false
+  }
+]
