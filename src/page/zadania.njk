@@ -12,6 +12,8 @@ robots: noindex
     <input x-model="newTask" type="text" placeholder="Nowe zadanie">
     <button @click="addTask()">Dodaj Zadanie</button>
 
+
+
     <!-- Lista zadań -->
     <h2>Do zrobienia</h2>
     <ul>
@@ -43,12 +45,12 @@ document.addEventListener('alpine:init', () => {
     newTask: '',
     
     async fetchTasks() {
-      const response = await fetch('http://localhost:3000/tasks.json');
+      const response = await fetch('/tasks.json');
       this.tasks = await response.json();
     },
     
     async saveTasks() {
-      await fetch('http://localhost:3000/save-tasks', {
+      await fetch('/save-tasks', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(this.tasks)

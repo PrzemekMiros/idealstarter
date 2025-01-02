@@ -1,22 +1,32 @@
 [
   {
-    "id": 1,
-    "text": "Zadanie 1",
-    "done": true
-  },
-  {
-    "id": 2,
-    "text": "Zadanie 2",
-    "done": true
-  },
-  {
     "id": 1735849887217,
     "text": "Kolejne zadanie",
-    "done": false
+    "done": true
   },
   {
     "id": 1735849905265,
     "text": "Kolejne zadanie 2",
-    "done": false
+    "done": true
+  },
+  {
+    "id": 1735850116105,
+    "text": "Kolejne zadanie 3",
+    "done": true
+  },
+  {
+    "id": 1735850263983,
+    "text": "Kolejne zadanie 4",
+    "done": true
+  },
+  {
+    "id": 1735850981978,
+    "text": "ryjh",
+    "done": true
+  },
+  {
+    "id": 1735851593303,
+    "text": "rtjrtjrtj",
+    "done": true
   }
 ]
